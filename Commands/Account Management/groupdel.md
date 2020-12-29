@@ -1,0 +1,5 @@
+# groupdel
+
+```bash
+groupdel `group`
+```

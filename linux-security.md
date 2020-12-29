@@ -1,0 +1,25 @@
+# Linux OS Hardening
+
+- User Account
+  - `No predictable` password, username or userid
+  - Password policy (`/etc/shadow`, `/etc/login.defs`, `/etc/pam.d/system-auth`)
+- Remove unwanted packages
+  - `apt list --installed | wc -l`
+- Stop unused services
+  - `systemctl --type=service`
+- Check on listening ports
+  - `netstat -tunlp`
+- Secure SSH configuration
+  - Disable root login, so one can trace the activities of the user logged-in
+  - Change to default 22 port
+- Enable firewall (iptables/firewalld)
+  - `firewall-cmd --help` and `/etc/firewalld` directory
+- Enable SELinux
+  - Secure Enhanced Linux. Uses the linux security module (LSM)
+  - Establish the access and permission rights for every user, app, processes, etc
+  - `sestatus`
+  - `/etc/sysconfig/selinux` configuration file
+- Change listening services port numbers
+  - Change ports
+- Keep your OS up to date (security patching)
+  - `yum update`

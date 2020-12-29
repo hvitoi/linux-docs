@@ -1,0 +1,5 @@
+# rclone
+
+```sh
+rclone config
+```
