@@ -7,4 +7,5 @@
 
 ```sh
 telnet
+echo X | telnet -e X localhost 3306 # MySQL connection
 ```

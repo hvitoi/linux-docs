@@ -28,7 +28,9 @@ curl -v `url`
 
 ## Test credentials - HTTP POST data
 curl --data "key1=value1&key2=value2" `url`
+curl -d "key1=value1&key2=value2" `url`
 curl --data "log=admin&pwd=password" https://wordpress.com/wp.login.php
+
 
 # Do not show the progress bar
 curl -s `url`
@@ -37,9 +39,24 @@ curl -s `url`
 curl -sL https://deb.nodesource.com/setup_14.x | bash -
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose # L for location
 
-
 # Add headers to the request
  curl -H "key:value" `url`
+
+```
+
+## HTTP methods
+
+```sh
+curl \
+  -H "Content-Type: application/json" \
+  -X GET "localhost:9200/shakespeare/_search?pretty" \
+  -d '{
+        "query": {
+          "match_phrase": {
+            "text_entry": "to be or not to be"
+          }
+        }
+      }'
 ```
 
 ## Script for testing requests
