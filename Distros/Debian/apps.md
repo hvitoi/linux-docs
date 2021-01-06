@@ -13,7 +13,8 @@ sudo apt install \
   handbrake \
   cmatrix \
   grub-customizer \
-  drawing
+  drawing \
+  qbittorent
 ```
 
 ## Debian package
@@ -27,7 +28,6 @@ sudo apt install \
 - Kubectl
 - Draw.io
 - Google Earth
-- Oracle VM VirtualBox
 - Minikube
 
 ## Binary

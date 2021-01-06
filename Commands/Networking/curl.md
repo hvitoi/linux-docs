@@ -32,7 +32,7 @@ curl -d "key1=value1&key2=value2" `url`
 curl --data "log=admin&pwd=password" https://wordpress.com/wp.login.php
 
 
-# Do not show the progress bar
+# Silent mode
 curl -s `url`
 
 # Curl and pipe to bash
@@ -57,6 +57,14 @@ curl \
           }
         }
       }'
+```
+
+```sh
+curl -s "localhost:9200/movies/_search" \
+  --request GET \
+  --header "Content-Type: application/json" \
+  --data @search.json \
+| jq .
 ```
 
 ## Script for testing requests
