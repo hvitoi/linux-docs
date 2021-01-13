@@ -1,12 +1,17 @@
 # Find
 
 - Find uses the 'hard way'. It iterates over the filesystem
+- `find` searches files or directories iterating over the filesystem (Slow)
 
 ## Search files and directories
 
 ```bash
-# Search files or directories iterating over the filesystem (Slow)
+# Search and file name
+
 find `location` -name `file/dir`
-sudo find / -name "sources.list"
+find / -name "sources.list"
 find . -name "notes.txt"
+
+# Search by file type and file name
+file / -type f # f for file
 ```

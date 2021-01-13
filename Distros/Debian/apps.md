@@ -29,6 +29,8 @@ sudo apt install \
 - Draw.io
 - Google Earth
 - Minikube
+- Github Desktop
+- Gitkraken
 
 ## Binary
 
