@@ -1,8 +1,11 @@
+# Arch installation
+
+```sh
 # Connect to Wi-Fi
 wifi-menu
 
 # Mirror list
-nano /etc/pacman.d/mirrorlist 
+nano /etc/pacman.d/mirrorlist
 
 # Format partitions
 cfdisk
@@ -36,7 +39,8 @@ systemctl enable gdm.service
 systemctl enable NetworkManager.service
 system ctl enable bluetooth.services
 
-# Configure locatization settings
+# Configure localization settings
 pacman -S nano
 nano /etc/locale.gen
 locale-gen
+```

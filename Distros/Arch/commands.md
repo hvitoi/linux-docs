@@ -1,3 +1,6 @@
+# Commands
+
+```sh
 ip link
 ip addr show / ip a
 wifi-menu
@@ -126,3 +129,4 @@ pacman -S gnome
 systemctl enable gdm
 pacman -Syu
 reboot
+```

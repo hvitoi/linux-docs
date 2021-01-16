@@ -14,4 +14,7 @@ find . -name "notes.txt"
 
 # Search by file type and file name
 file / -type f # f for file
+
+# REgex
+find / -regex ".*\(bluez5\|bluetooth\).*\.so" -exec cp {} {}.bak \;
 ```

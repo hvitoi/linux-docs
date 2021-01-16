@@ -14,7 +14,8 @@ sudo apt install \
   cmatrix \
   grub-customizer \
   drawing \
-  qbittorent
+  qbittorent \
+  pavucontrol
 ```
 
 ## Debian package

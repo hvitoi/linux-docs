@@ -46,7 +46,14 @@ echo "v4l2loopback" >> /etc/modules-load.d/v4l2loopback.conf
 
 ```sh
 # Config file
-echo "options v4l2loopback exclusive_caps=1" >> /etc/modprobe.d/v4l2loopback.conf
+echo '
+# Module options for Video4Linux, needed for our DSLR Webcam
+# alias dslr-webcam v4l2loopback
+options v4l2loopback exclusive_caps=1
+options v4l2loopback width=1920
+options v4l2loopback height=1080
+' \
+>> /etc/modprobe.d/v4l2loopback.conf
 ```
 
 - Update initial ramdisk
@@ -84,11 +91,18 @@ echo "options snd-aloop index=$LOOPBACK_CARD_ID" >> /etc/modprobe.d/snd-aloop.co
 
 - Edit `/etc/pulse/default.pa` to show up the right audio device in PulseAudio
   - Uncomment line `load-module module-alsa-source device=hw:0,0`
+  - replace to `load-module module-alsa-source device=hw:Loopback,1,0`
+
+```sh
+pacmd load-module module-alsa-source device=hw:Loopback,1,0
+```
 
 ```sh
 # Determine the card and the device number of your mic
 arecord -l
 
 # Restart PulseAudio
-pulseaudio -k ; pulseaudio -D
+pulseaudio --kill
+pulseaudio --start
+pulseaudio --daemonize
 ```
