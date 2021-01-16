@@ -58,6 +58,7 @@ echo $SHELL
 
 ```bash
 #!/bin/bash
+let rNum=$RANDOM*$RANDOM
 name=Herique
 surname=Vitoi
 msg='How are you?' # Muti-word strings must be in quotes!
