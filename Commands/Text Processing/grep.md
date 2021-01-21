@@ -21,6 +21,8 @@ grep -n `keyword` `file` # Display matching lines and show its number
 grep -i `keyword` `file` # Case insensitive
 grep -v `keyword` `file` # Intersection. Exclude the line that do not contain the keyword
 grep -w `keyword` `file` # Match only whole words
+grep -e `bluez` -e `a2dp_codec` `file` # regex patterns
+
 
 # Pipe
 ls -l ~/ | grep Desktop

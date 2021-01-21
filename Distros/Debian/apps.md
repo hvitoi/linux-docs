@@ -32,6 +32,7 @@ sudo apt install \
 - Minikube
 - Github Desktop
 - Gitkraken
+- Popcorn-Time
 
 ## Binary
 

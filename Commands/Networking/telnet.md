@@ -6,6 +6,10 @@
   - `sudo apt install telnet`
 
 ```sh
-telnet
+# Telnet an IP and port
+telnet `ip` `port`
+telnet mywebsite.com 443
+
+# Set escape character
 echo X | telnet -e X localhost 3306 # MySQL connection
 ```
