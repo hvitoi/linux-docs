@@ -37,7 +37,7 @@ pacman -S gnome
 # Habilitate services
 systemctl enable gdm.service
 systemctl enable NetworkManager.service
-system ctl enable bluetooth.services
+systemctl enable bluetooth.services
 
 # Configure localization settings
 pacman -S nano
