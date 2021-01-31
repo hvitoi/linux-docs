@@ -1,5 +1,27 @@
 # IP command
 
+- Command `ip` is in `iproute2` package
+
+```bash
+## List all available ip addresses
+ip address
+ip addr
+ip a
+
+# Check network interfaces
+ip link
+
+# Set interface up
+ip link set `interface` up
+ip link set wlp3s0 up
+
+# Interface status
+ip link show `interface`
+
+# List all available ip addresses (deprecated)
+ifconfig
+```
+
 - `IP`: Identifies each computer using Internet Protocol
 - `Subnetmask`: Masks the IP. Divide the IP into network address and host address
 - `Gateway`: Which route to take to send the traffic out or to receive traffic
@@ -22,16 +44,6 @@
 - Windows: Remote Desktop RDP (for Windows)
 - VMware ESC: vSphere client (for Windows)
 - Linux: Putty (for Windows), SecureCRT, SSH from Linux to Linux
-
-```bash
-## List all available ip addresses
-ip address
-ip addr
-ip a
-
-# List all available ip addresses (deprecated)
-ifconfig
-```
 
 ## NIC (Network Interface Card)
 

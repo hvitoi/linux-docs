@@ -2,6 +2,7 @@
 
 - Manage processes
 - New version of the legacy `service` command
+- `systemctl` is the interaction with `systemd`
 
 ```bash
 systemctl status `service`

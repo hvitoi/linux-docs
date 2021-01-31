@@ -56,25 +56,5 @@ sudo nano /etc/fstab
 
 # Activate swap
 swapon -a
-```
-
-## Add swap to fstab
-
-- Configure the `/etc/fstab`
-
-```fstab
-# <file system> <mount point> <type> <options> <dump> <pass>
-
-# Debian
-UUID=027f36af-e4d6-4903-993b-cd0176d2699e / ext4 errors=remount-ro 0 1
-
-# EFI
-UUID=103C-FD10 /boot/efi vfat umask=0077 0 1
-
-# Swap
-UUID=c0ebb46b-89d1-42fc-9af7-e4394d27c24e none swap sw 0 0
-#/media/hvitoi/Dummy/swapfile none swap sw 0 0
-
-# Moon
-UUID=C2D8DF53D8DF43F7 /media/hvitoi/Moon ntfs defaults,uid=1000 0 0
+swapon /dev/sdx # activate specific swap
 ```
