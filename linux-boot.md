@@ -87,19 +87,27 @@ PrintMotd no
 systemctl restart sshd
 ```
 
-## Grub repair
+## Grub
 
-### Change root
+### Installation
 
-```bash
+```sh
+pacman -S grub efibootmgr os-prober
+mkdir /efi
+mount /dev/sdx1 /efi
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+### Repair
+
+```sh
 sudo mount /dev/sda3 /mnt
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
 ```
 
-### Install grub
-
-```bash
+```sh
 mount /dev/sda1 /boot/efi
 grub-install /dev/sda
 update-grub

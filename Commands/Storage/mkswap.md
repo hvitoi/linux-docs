@@ -58,3 +58,6 @@ sudo nano /etc/fstab
 swapon -a
 swapon /dev/sdx # activate specific swap
 ```
+
+- `echo '/swapfile none swap sw 0 0' | tee -a /etc/fstab`
+- Append new swap item to fstab (only if created after the genfstab command)
