@@ -11,6 +11,7 @@ pacman -S `package`
 
 # Remove
 pacman -R `package`
+sudo pacman -Rns `package`
 
 # Query
 pacman -Q `package`
@@ -18,7 +19,7 @@ pacman -Q `package`
 
 ```sh
 # Update repos
-pacman -Syyy
+pacman -Syy
 
 # Update packages
 pacman -Syu

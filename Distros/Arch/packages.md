@@ -22,6 +22,7 @@
 - `os-prober`: Detect other OS
 - `grub`: grub
 - `ntfs-3g`: Mount NTFS partitions
+- `exfat-utils`
 - `gnome`
 - `gnome-extra`
 - `chrome-gnome-shell`
@@ -52,6 +53,8 @@ systemctl enable bluetooth.service
 - `qbittorrent`
 - `obs-studio`
 - `texstudio`, `texlive-core`
+- `grub-customizer`
+- `chntpw`
 
 ## AUR
 
@@ -63,6 +66,8 @@ systemctl enable bluetooth.service
 - `drawio-desktop` (pending)
 - `google-earth-pro`
 - `popcorntime-bin`
+- `f5vpn`
+- `pulseaudio-modules-bt`
 
 ## Dev
 

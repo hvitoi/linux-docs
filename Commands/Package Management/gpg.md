@@ -6,4 +6,6 @@
 
 ```sh
 gpg --keyserver-options auto-key-retrieve --verify `archlinux-version-x86_64.iso.sig`
+
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
 ```
