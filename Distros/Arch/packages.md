@@ -43,6 +43,8 @@ systemctl enable bluetooth.service
 - `exfat-utils`
 - `mesa`
 - `chrome-gnome-shell`
+- `htop`
+- `diffutils`
 
 ## AUR
 
@@ -56,10 +58,13 @@ systemctl enable bluetooth.service
 - `popcorntime-bin`
 - `f5vpn`
 - `pulseaudio-modules-bt`
+- `woeusb`
+- `droidcam`
 
 ## Dev
 
 - `jdk11-openjdk`
+- `git`
 - `nodejs`
 - `npm`
 - `kubectl`

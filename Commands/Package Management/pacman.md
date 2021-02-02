@@ -20,7 +20,10 @@ pacman -Q `package`
 ```sh
 # Update repos
 pacman -Syy
+pacman -Syyy # including AUR
 
 # Update packages
 pacman -Syu
+pacman -Syyu # including AUR
+
 ```

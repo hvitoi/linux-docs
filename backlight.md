@@ -4,10 +4,17 @@
 - `/sys/class/backlight/`
   - intel_backlight
 
-## ddcutil
+## External monitor
+
+- `i2c-dev` is the module to control external monitor brightness over I2C
+- `ddcutil` package can be used to query and set brightness settings
 
 ```sh
-sudo apt install ddcutil
+sudo modprobe i2c-dev
+sudo pacman -S ddcutil
+```
+
+```sh
 sudo ddcutil environment
 sudo ddcutil detect
 ```
