@@ -4,29 +4,27 @@
 
 - `base`: Minimal package set to define a basic Arch Linux installation
 - `base-devel`: Building tools
-- `linux`: The Linux kernel and modules (Optionally use linux-lts)
+- `linux-lts`: The Linux LTS kernel and modules (Optionally use linux for rolling releases)
 - `linux-firmware`: Firmware files for Linux
-- `intel-ucode`: Stability and security updates for Intel CPUs
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
 - `os-prober`:Utility to detect other OSes on a set of drives
+- `intel-ucode`: Stability and security updates for Intel CPUs
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
+- `mesa`: Open-source implementation of the OpenGL specification
+- `nvidia`: NVIDIA drivers for linux
 - `gnome`: GUI
-
-```sh
-systemctl enable gdm.service
-systemctl enable NetworkManager.service
-systemctl enable bluetooth.service
-```
 
 ## Packages
 
 - `vim`
+- `firefox`
+- `gnome-tweaks`
+- `tilix`
+- `ttf-droid`
 - `pavucontrol`
 - `solaar`
-- `ttf-droid`
-- `tilix`
 - `cmatrix`
 - `vlc`
 - `gimp`
@@ -41,7 +39,6 @@ systemctl enable bluetooth.service
 - `chntpw`
 - `ntfs-3g`
 - `exfat-utils`
-- `mesa`
 - `chrome-gnome-shell`
 - `htop`
 - `diffutils`
@@ -49,6 +46,7 @@ systemctl enable bluetooth.service
 ## AUR
 
 - `google-chrome`
+- `oh-my-zsh-git`
 - `visual-studio-code-bin`
 - `snapd`
 - `spotify`
@@ -63,6 +61,7 @@ systemctl enable bluetooth.service
 
 ## Dev
 
+- `curl`
 - `jdk11-openjdk`
 - `git`
 - `nodejs`
