@@ -53,15 +53,15 @@ locale-gen  # Edit /etc/locale.gen first
 # Root password
 passwd
 
+# Install additional packages
+pacman -S intel-ucode bluez bluez-utils mesa nvidia nvidia-utils gnome zsh
+
 # Install grub
 pacman -S grub efibootmgr os-prober
 mkdir /efi
 mount /dev/sdx1 /efi
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
-
-# Install additional packages
-pacman -S intel-ucode bluez bluez-utils zsh gnome
 
 # Create user
 useradd -m -d /home/hvitoi -s /bin/zsh hvitoi
@@ -78,13 +78,4 @@ systemctl enable bluetooth.service
 
 # Reboot (first exit chroot)
 reboot
-```
-
-```sh
-# Other packages
-pacman -S intel-ucode
-pacman -S xorg-server
-pacman -S mesa # intel graphics
-pacman -S nvidia nvidia-utils
-pacman -S virtualbox-guest-utils xf86-video-vmware # only for VM
 ```

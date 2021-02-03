@@ -6,15 +6,16 @@
 - `base-devel`: Building tools
 - `linux-lts`: The Linux LTS kernel and modules (Optionally use linux for rolling releases)
 - `linux-firmware`: Firmware files for Linux
-- `grub`: GNU GRand Unified Bootloader
-- `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
-- `os-prober`:Utility to detect other OSes on a set of drives
 - `intel-ucode`: Stability and security updates for Intel CPUs
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
 - `mesa`: Open-source implementation of the OpenGL specification
 - `nvidia`: NVIDIA drivers for linux
+- `nvidia-utils`
 - `gnome`: GUI
+- `grub`: GNU GRand Unified Bootloader
+- `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
+- `os-prober`:Utility to detect other OSes on a set of drives
 
 ## Packages
 
@@ -46,7 +47,6 @@
 ## AUR
 
 - `google-chrome`
-- `oh-my-zsh-git`
 - `visual-studio-code-bin`
 - `snapd`
 - `spotify`
@@ -78,3 +78,4 @@
 - `github-desktop-bin` (AUR)
 - `minikube`
 - `intellij-idea-community-edition`
+- `helm`
