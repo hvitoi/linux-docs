@@ -11,7 +11,8 @@ pacman -S `package`
 
 # Remove
 pacman -R `package`
-sudo pacman -Rns `package`
+pacman -Rns `package`
+pacman -Rcns `package` # Unisntall with all the dependencies
 
 # Query
 pacman -Q `package`

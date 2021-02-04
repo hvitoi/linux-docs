@@ -2,19 +2,22 @@
 
 - Add and remove modules from the Linux Kernel
 - Loading kernel modules manually (through `modprobe`) means you will have to modprobe every time you reboot
+- Modules are stored at `/lib/modules/kernel-release` and `/usr/lib/modules/kernel-release`
 
 ```sh
+# Activate module
 modprobe `module-name`
 modprobe bonding # And module for network bonding
 modprobe v4l2loopback exclusive_caps=1 max_buffers=2 # virtual video devices
 
 # Display configuration of the modules
 modprobe -c
+modprobe -c | grep `module-name`
 ```
 
-## Load module automatically
+## Automatic module loading with systemd
 
-- To load modules upon start, modules must be defined in `/etc/modules`
+- To load modules upon start, modules must be defined in `/etc/modules` (deprecated)
 
 ```conf
 # /etc/modules: kernel modules to load at boot time.
@@ -25,7 +28,7 @@ bonding
 v4l2loopback
 ```
 
-- Optionally create a file at `/etc/modules-load.d/modulename.conf`
+- To load module upon start, modules must be defined in a file at `/etc/modules-load.d/modulename.conf` (preferred)
 - E.g., `/etc/modules-load.d/v4l2loopback.conf` with the content v4l2loopback
 
 ```conf

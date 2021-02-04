@@ -100,6 +100,10 @@ fi
 
 ## For loops
 
+```sh
+for i in `seq 1 10`; do echo $i; done
+```
+
 ```bash
 #!/bin/bash
 for i in 1 2 3 4 5

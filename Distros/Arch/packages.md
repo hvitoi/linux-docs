@@ -6,12 +6,13 @@
 - `base-devel`: Building tools
 - `linux-lts`: The Linux LTS kernel and modules (Optionally use linux for rolling releases)
 - `linux-firmware`: Firmware files for Linux
+- `linux-lts-headers`: Headers and scripts for building modules for the LTS Linux kernel
 - `intel-ucode`: Stability and security updates for Intel CPUs
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
 - `mesa`: Open-source implementation of the OpenGL specification
-- `nvidia`: NVIDIA drivers for linux
-- `nvidia-utils`
+- `nvidia-lts`: NVIDIA drivers for linux-lts
+- `nvidia-utils`: NVIDIA drivers utilities
 - `gnome`: GUI
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
@@ -43,6 +44,8 @@
 - `chrome-gnome-shell`
 - `htop`
 - `diffutils`
+- `i2c-tools`
+- `ddcutil`
 
 ## AUR
 
