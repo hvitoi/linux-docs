@@ -6,6 +6,22 @@
 
 ## External monitor
 
+### ddcutil
+
+- It's a backlight utility package that can be used to query and set brightness settings
+
+```sh
+pacman -S ddcutil
+ddcutil capabilities # "Feature: 10" is brightness
+
+# Brightness
+ddcutil getvcp 10 # Get current brightness value
+ddcutil setvcp 10 70 # Set brightness to 70
+
+ddcutil environment
+ddcutil detect
+```
+
 ### i2c-dev
 
 - `i2c-dev` is the module to control external monitor brightness over I2C
@@ -26,22 +42,6 @@ pacman -S i2c-tools
 sudo groupadd --system i2c # create i2c group (if not exists already)
 sudo cp /usr/share/ddcutil/data/45-ddcutils-i2c.rules /etc/udev/rules.d # Copy the udev rule for the new group to rules.d
 usermod -aG i2c hvitoi  # add user to the i2c group
-```
-
-### ddcutil
-
-- It's a backlight utility package that can be used to query and set brightness settings
-
-```sh
-pacman -S ddcutil
-ddcutil capabilities # "Feature: 10" is brightness
-
-# Brightness
-ddcutil getvcp 10 # Get current brightness value
-ddcutil setvcp 10 70 # Set brightness to 70
-
-ddcutil environment
-ddcutil detect
 ```
 
 ### ddccontrol

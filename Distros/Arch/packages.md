@@ -25,8 +25,6 @@
 - `gnome-tweaks`
 - `tilix`
 - `ttf-droid`
-- `pavucontrol`
-- `solaar`
 - `cmatrix`
 - `vlc`
 - `gimp`
@@ -44,8 +42,16 @@
 - `chrome-gnome-shell`
 - `htop`
 - `diffutils`
+
+## I/O
+
 - `i2c-tools`
 - `ddcutil`
+- `ddccontrol-db-git` (AUR)
+- `ddccontrol` (AUR)
+- `solaar`
+- `logiops-git` (AUR): logid.service
+- `pavucontrol`
 
 ## AUR
 
