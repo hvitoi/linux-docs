@@ -16,6 +16,9 @@ sudo apt install \
   drawing \
   qbittorent \
   pavucontrol
+  fonts-arphic-ukai fonts-arphic-uming  \ # Chinese
+  fonts-ipafont-mincho fonts-ipafont-gothic \ # Japanese
+  fonts-unfonts-core # Korean
 ```
 
 ## Debian package

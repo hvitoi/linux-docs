@@ -2,11 +2,15 @@
 
 - Power level of backlight LEDs can be controlled using `ACPI` kernel module
 - `/sys/class/backlight/`
+
   - intel_backlight
 
-## External monitor
+- **Brightness key lag fix**
+  - At `/usr/share/X11/xkb/symbols/br`
+  - Commment lone `modifier_map Mod3 { Scroll_Lock };`
+  - Run `setxkbmap`
 
-### ddcutil
+## ddcutil
 
 - It's a backlight utility package that can be used to query and set brightness settings
 
@@ -22,7 +26,7 @@ ddcutil environment
 ddcutil detect
 ```
 
-### i2c-dev
+## i2c-dev
 
 - `i2c-dev` is the module to control external monitor brightness over I2C
 
@@ -44,21 +48,12 @@ sudo cp /usr/share/ddcutil/data/45-ddcutils-i2c.rules /etc/udev/rules.d # Copy t
 usermod -aG i2c hvitoi  # add user to the i2c group
 ```
 
-### ddccontrol
+## Gnome integration
 
-- `ddccontrol` is a GUI that relies on ddcutil
-- Requires `ddccontrol-db-git`
+- `Brightness control using ddcutil` gnome extension to control external monitor brightness
+- <https://extensions.gnome.org/extension/2645/brightness-control-using-ddcutil/>
 
-### ddcci
-
-- Package `ddcci-driver-linux-dkms` package for the module to expose external monitors in sysfs
-- Monitor is exposed at `/sys/class/backlight/`
-- Integrates well with gnome
-
-```conf
-# /etc/modules-load.d/ddcci.conf
-ddcci
-```
+- Adjust brightness with the slider
 
 ```sh
 # Brightness slider
@@ -68,5 +63,19 @@ gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gn
 # Keyboard brightness
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
+```
 
+## ddccontrol
+
+- `ddccontrol` is a GUI that relies on ddcutil
+- Requires `ddccontrol-db-git`
+
+## ddcci
+
+- Package `ddcci-driver-linux-dkms` package for the module to expose external monitors in sysfs
+- Monitor is exposed at `/sys/class/backlight/`
+
+```conf
+# /etc/modules-load.d/ddcci.conf
+ddcci
 ```

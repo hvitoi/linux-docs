@@ -1,8 +1,16 @@
-# Firmware drivers
+# Debian ISO
+
+- Debian Bullseye
+- Testing branch
+- Non-free repositories
+
+<https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/weekly-builds/amd64/iso-dvd/>
+
+## Firmware drivers
 
 - Firmwares are stored at `/lib/firmware`
 
-## Non-free drivers for Asus Q550LF
+### Non-free drivers for Asus Q550LF
 
 - firmware-iwlwifi
 - firmware-realtek
@@ -10,7 +18,7 @@
 - firmware-misc-nonfree
 - nvidia-driver (requires linux-headers-amd64)
 
-## Firmware info
+### Firmware info
 
 ```bash
 ## List out missing drivers
@@ -23,7 +31,7 @@ dpkg-query -W -f='${Section}\t${Package}\n' | grep ^non-free
 aptitude search '~i ?section(non-free)'
 ```
 
-## Nvidia drivers
+### Nvidia drivers
 
 ```bash
 # Install
@@ -37,7 +45,7 @@ apt install --reinstall xserver-xorg-core xserver-xorg-video-nouveau
 
 - Download from <https://www.debian.org/distrib/packages>
 
-## Bumblebee
+### Bumblebee
 
 - Allows the use of NVIDIA Optimus both on `nvidia` or `nouveau` drivers
 
@@ -49,7 +57,7 @@ sudo apt install bumblebee primus
 sudo apt install bumblebee-nvidia primus
 ```
 
-## config iwlwifi
+### config iwlwifi
 
 - /etc/modprobe.d/iwlwifi.conf
 
