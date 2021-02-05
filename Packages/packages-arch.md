@@ -13,6 +13,7 @@
 - `mesa`: Open-source implementation of the OpenGL specification
 - `nvidia-lts`: NVIDIA drivers for linux-lts
 - `nvidia-utils`: NVIDIA drivers utilities
+- `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `gnome`: GUI
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
@@ -42,6 +43,8 @@
 - `chrome-gnome-shell`
 - `htop`
 - `diffutils`
+- `libreoffice-fresh`
+- `dnsutils`
 
 ## I/O
 

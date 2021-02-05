@@ -1,5 +1,7 @@
 # nslookup
 
+- Requires package `dnsutils`
+
 ```sh
 # Find the IP from a hostname
 nslookup `hostname`

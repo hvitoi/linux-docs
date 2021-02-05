@@ -1,5 +1,7 @@
 # traceroute
 
+- Requires `traceroute` package
+
 - Used to map the journey that a packet of information undertakes from its source to its destination
 - Useful to locate when data loss occurs throughout the network
 - Identify slow points that may adversely affect the network traffic
