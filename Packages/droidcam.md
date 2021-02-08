@@ -1,4 +1,4 @@
-# droicam
+# droidcam
 
 ## Install droidcam client
 

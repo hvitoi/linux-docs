@@ -55,6 +55,7 @@
 - `solaar`
 - `logiops-git` (AUR): logid.service
 - `pavucontrol`
+- `v4l2loopback-dkms`
 
 ## AUR
 
@@ -91,3 +92,4 @@
 - `minikube`
 - `intellij-idea-community-edition`
 - `helm`
+- `android-tools`
