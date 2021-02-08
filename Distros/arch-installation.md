@@ -79,3 +79,11 @@ systemctl enable bluetooth.service
 # Reboot (first exit chroot)
 reboot
 ```
+
+## Drivers
+
+==> WARNING: Possibly missing firmware for module: aic94xx
+==> WARNING: Possibly missing firmware for module: wd719x
+==> WARNING: Possibly missing firmware for module: xhci_pci
+
+( 7/10) Updating linux initcpios...
