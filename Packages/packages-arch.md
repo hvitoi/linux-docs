@@ -93,3 +93,4 @@
 - `intellij-idea-community-edition`
 - `helm`
 - `android-tools`
+- `azure-cli` (AUR)
