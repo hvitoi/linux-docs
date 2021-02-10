@@ -33,6 +33,7 @@ sudo modprobe v4l2loopback exclusive_caps=1 max_buffers=2
 
 # Install dkms module
 sudo apt install v4l2loopback-dkms v4l2loopback-utils
+sudo pacman -S v4l2loopback-dkms
 ```
 
 - Load module permanentely upon startup

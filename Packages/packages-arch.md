@@ -19,32 +19,25 @@
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
 - `os-prober`:Utility to detect other OSes on a set of drives
 
-## Packages
+## System Utilities
 
-- `vim`
-- `firefox`
-- `gnome-tweaks`
-- `tilix`
-- `ttf-droid`
-- `cmatrix`
-- `vlc`
-- `gimp`
-- `drawing`
-- `inkscape`
-- `handbrake`
-- `qbittorrent`
-- `obs-studio`
-- `texstudio`
-- `texlive-core`
-- `grub-customizer`
+- `dmidecode`
+- `dnsutils`
 - `chntpw`
+- `htop`
+- `grub-customizer`
 - `ntfs-3g`
 - `exfat-utils`
+- `vim`
+- `tilix`
+- `ttf-droid`
+- `gnome-tweaks`
 - `chrome-gnome-shell`
-- `htop`
-- `diffutils`
-- `libreoffice-fresh`
-- `dnsutils`
+- `oh-my-zsh` (BIN)
+- `snapd` (AUR)
+- `pulseaudio-modules-bt` (AUR)
+- `woeusb` (AUR)
+- `f5vpn` (AUR)
 
 ## I/O
 
@@ -56,24 +49,11 @@
 - `logiops-git` (AUR): logid.service
 - `pavucontrol`
 - `v4l2loopback-dkms`
-
-## AUR
-
-- `google-chrome`
-- `visual-studio-code-bin`
-- `snapd`
-- `spotify`
-- `teams`
-- `drawio-desktop`
-- `google-earth-pro`
-- `popcorntime-bin`
-- `f5vpn`
-- `pulseaudio-modules-bt`
-- `woeusb`
-- `droidcam`
+- `droidcam` (BIN)
 
 ## Dev
 
+- `visual-studio-code-bin` (AUR)
 - `curl`
 - `jdk11-openjdk`
 - `git`
@@ -94,3 +74,28 @@
 - `helm`
 - `android-tools`
 - `azure-cli` (AUR)
+- `dotnet-sdk`
+- `gitkraken`
+- `diffutils`
+
+## Apps
+
+- `firefox`
+- `vlc`
+- `gimp`
+- `drawing`
+- `inkscape`
+- `handbrake`
+- `qbittorrent`
+- `obs-studio`
+- `texstudio`
+- `texlive-core`
+- `libreoffice-fresh`
+- `google-chrome` (AUR)
+- `spotify` (AUR)
+- `teams` (AUR)
+- `drawio-desktop` (AUR)
+- `google-earth-pro` (AUR)
+- `popcorntime-bin` (AUR)
+- `discord`
+- `cmatrix`
