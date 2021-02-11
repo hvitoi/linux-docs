@@ -97,5 +97,4 @@
 - `drawio-desktop` (AUR)
 - `google-earth-pro` (AUR)
 - `popcorntime-bin` (AUR)
-- `discord`
 - `cmatrix`
