@@ -77,6 +77,8 @@
 - `dotnet-sdk`
 - `gitkraken`
 - `diffutils`
+- `freerdp`
+- `powershell-bin`
 
 ## Apps
 
