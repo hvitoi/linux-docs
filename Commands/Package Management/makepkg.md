@@ -12,3 +12,8 @@ sudo pacman -U pacote.pkg.tar.xz # Install package
 # Make and install
 makepkg -si
 ```
+
+```sh
+makepkg --syncdeps --rmdeps --clean --install --cleanbuild
+makepkg -srciC
+```

@@ -28,7 +28,7 @@ bonding
 v4l2loopback
 ```
 
-- To load module upon start, modules must be defined in a file at `/etc/modules-load.d/modulename.conf` (preferred)
+- To load module upon start, modules must be defined in a file at `/etc/modules-load.d/modulename.conf` (preferred) or `/usr/lib/modules-load.d`
 - E.g., `/etc/modules-load.d/v4l2loopback.conf` with the content v4l2loopback
 
 ```conf

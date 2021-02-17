@@ -26,5 +26,7 @@ pacman -Syyy # including AUR
 # Update packages
 pacman -Syu
 pacman -Syyu # including AUR
+pacman -Syu --ignore "package" # Ignore a certain package
+
 
 ```

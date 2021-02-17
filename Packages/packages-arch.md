@@ -38,6 +38,10 @@
 - `pulseaudio-modules-bt` (AUR)
 - `woeusb` (AUR)
 - `f5vpn` (AUR)
+- `net-tools`
+- `wireshark-qt`
+- `virtualbox`
+- `virtualbox-host-modules-arch`
 
 ## I/O
 
@@ -79,6 +83,7 @@
 - `diffutils`
 - `freerdp`
 - `powershell-bin`
+- `dbeaver`
 
 ## Apps
 
