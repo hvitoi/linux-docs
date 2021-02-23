@@ -42,6 +42,7 @@
 - `wireshark-qt`
 - `virtualbox`
 - `virtualbox-host-modules-arch`
+- `rclone`
 
 ## I/O
 
@@ -79,11 +80,13 @@
 - `android-tools`
 - `azure-cli` (AUR)
 - `dotnet-sdk`
-- `gitkraken`
+- `gitkraken` (AUR)
 - `diffutils`
 - `freerdp`
-- `powershell-bin`
+- `powershell-bin` (AUR)
 - `dbeaver`
+- `slack-desktop` (AUR)
+- `kafka` (AUR)
 
 ## Apps
 
