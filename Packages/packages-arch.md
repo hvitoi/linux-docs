@@ -40,21 +40,19 @@
 - `f5vpn` (AUR)
 - `net-tools`
 - `wireshark-qt`
-- `virtualbox`
-- `virtualbox-host-modules-arch`
 - `rclone`
 
 ## I/O
 
 - `i2c-tools`
 - `ddcutil`
-- `ddccontrol-db-git` (AUR)
-- `ddccontrol` (AUR)
 - `solaar`
 - `logiops-git` (AUR): logid.service
 - `pavucontrol`
 - `v4l2loopback-dkms`
 - `droidcam` (BIN)
+- `virtualbox`
+- `virtualbox-host-modules-arch`
 
 ## Dev
 
@@ -87,6 +85,9 @@
 - `dbeaver`
 - `slack-desktop` (AUR)
 - `kafka` (AUR)
+- `cmake`
+- `python`
+- `python-pip`
 
 ## Apps
 
