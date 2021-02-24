@@ -12,7 +12,7 @@ pacman -S `package`
 # Remove
 pacman -R `package`
 pacman -Rns `package`
-pacman -Rcns `package` # Unisntall with all the dependencies
+pacman -Rcns `package` # Uninstall with all the dependencies
 
 # Query
 pacman -Q `package`
