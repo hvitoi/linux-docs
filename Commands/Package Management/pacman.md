@@ -43,22 +43,13 @@ pacman -Ss "regex-package"
 ```sh
 # Remove package
 pacman -R "package"
-pacman -Rns "package"
-pacman -Rcns "package" # Uninstall with all the dependencies
 
-# Query
-pacman -Q "package"
-```
+# Remote configuration files
+pacman -Rn "package"
 
-```sh
-# Update repos
-pacman -Syy
-pacman -Syyy # including AUR
+# Remove unnecessary dependencies
+pacman -Rs
 
-# Update packages
-pacman -Syu
-pacman -Syyu # including AUR
-pacman -Syu --ignore "package" # Ignore a certain package
-
-
+# Cascade (remove all packages that depend on them)
+pacman -Rc "package"
 ```
