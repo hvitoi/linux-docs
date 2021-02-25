@@ -4,14 +4,14 @@
 
 - `base`: Minimal package set to define a basic Arch Linux installation
 - `base-devel`: Building tools
-- `linux-lts`: The Linux LTS kernel and modules (Optionally use linux for rolling releases)
+- `linux`: The Linux LTS kernel and modules
 - `linux-firmware`: Firmware files for Linux
-- `linux-lts-headers`: Headers and scripts for building modules for the LTS Linux kernel
+- `linux-headers`: Headers and scripts for building modules for the Linux kernel
 - `intel-ucode`: Stability and security updates for Intel CPUs
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
 - `mesa`: Open-source implementation of the OpenGL specification
-- `nvidia-lts`: NVIDIA drivers for linux-lts
+- `nvidia`: NVIDIA drivers
 - `nvidia-utils`: NVIDIA drivers utilities
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `gnome`: GUI
@@ -34,7 +34,6 @@
 - `gnome-tweaks`
 - `chrome-gnome-shell`
 - `oh-my-zsh` (BIN)
-- `snapd` (AUR)
 - `pulseaudio-modules-bt` (AUR)
 - `woeusb` (AUR)
 - `f5vpn` (AUR)
@@ -48,7 +47,6 @@
 - `i2c-tools`
 - `ddcutil`
 - `solaar`
-- `logiops-git` (AUR): logid.service
 - `pavucontrol`
 - `v4l2loopback-dkms`
 - `droidcam` (BIN)
@@ -84,11 +82,11 @@
 - `freerdp`
 - `powershell-bin` (AUR)
 - `dbeaver`
-- `slack-desktop` (AUR)
 - `kafka` (AUR)
 - `cmake`
 - `python`
 - `python-pip`
+- `nvm` (AUR)
 
 ## Apps
 
@@ -106,6 +104,7 @@
 - `google-chrome` (AUR)
 - `spotify` (AUR)
 - `teams` (AUR)
+- `slack-desktop` (AUR)
 - `drawio-desktop` (AUR)
 - `google-earth-pro` (AUR)
 - `popcorntime-bin` (AUR)

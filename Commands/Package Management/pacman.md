@@ -2,13 +2,27 @@
 
 - Mirrorlist stored at `/etc/pacman.d/mirrorlist`
 
-```sh
-# List installed
-pacman -Qe # e for manually installed
+## List
 
+```sh
+# Manually installed
+pacman -Qe
+
+# AUR
+pacman -Qm
+
+```
+
+## Install
+
+```sh
 # Install
 pacman -S `package`
+```
 
+## Remove
+
+```sh
 # Remove
 pacman -R `package`
 pacman -Rns `package`
