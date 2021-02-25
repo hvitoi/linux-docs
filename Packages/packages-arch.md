@@ -41,6 +41,7 @@
 - `net-tools`
 - `wireshark-qt`
 - `rclone`
+- `nmap`
 
 ## I/O
 
