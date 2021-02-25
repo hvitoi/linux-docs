@@ -22,21 +22,32 @@ pacman -Qi "package"
 ## Sync
 
 ```sh
-# Install a
-pacman -S "package"
+# Install package
 pacman --sync "package"
+pacman -S "package"
+
+# Refresh package database from server
+pacman -Sy
+pacman -Syy # force download (even if up to date)
+
+# Upgrade installed packages
+pacman -Su
+pacman -Syu # update & upgrade
+
+# Search package on remote repo
+pacman -Ss "regex-package"
 ```
 
 ## Remove
 
 ```sh
-# Remove
-pacman -R `package`
-pacman -Rns `package`
-pacman -Rcns `package` # Uninstall with all the dependencies
+# Remove package
+pacman -R "package"
+pacman -Rns "package"
+pacman -Rcns "package" # Uninstall with all the dependencies
 
 # Query
-pacman -Q `package`
+pacman -Q "package"
 ```
 
 ```sh
