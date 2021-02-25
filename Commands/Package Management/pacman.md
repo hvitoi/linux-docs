@@ -2,22 +2,29 @@
 
 - Mirrorlist stored at `/etc/pacman.d/mirrorlist`
 
-## List
+## Query
 
 ```sh
-# Manually installed
+# Query all packages
+pacman --query
+pacman -Q
+
+# Explicitly installed
 pacman -Qe
 
-# AUR
+# AUR packages (foreign)
 pacman -Qm
 
+# Info about a package
+pacman -Qi "package"
 ```
 
-## Install
+## Sync
 
 ```sh
-# Install
-pacman -S `package`
+# Install a
+pacman -S "package"
+pacman --sync "package"
 ```
 
 ## Remove
