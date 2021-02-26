@@ -17,6 +17,9 @@ pacman -Qm
 
 # Info about a package
 pacman -Qi "package"
+
+# List outdated packages
+pacman -Qu
 ```
 
 ## Sync
