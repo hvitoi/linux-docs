@@ -44,11 +44,11 @@
 - `i2c-tools`
 - `ddcutil`
 - `solaar`
-- `pavucontrol`
 - `v4l2loopback-dkms`
 - `droidcam` (BIN)
 - `virtualbox`
 - `virtualbox-host-modules-arch`
+- `pavucontrol`
 
 ## Dev
 
@@ -84,6 +84,7 @@
 - `python`
 - `python-pip`
 - `nvm` (AUR)
+- `rust`
 
 ## Apps
 
@@ -123,5 +124,4 @@
 - `xdg-desktop-portal`
 - `xdg-desktop-portal-gtk`
 - `libpipewire02`
-- `pulseeffects`
 - `gst-plugin-pipewire`
