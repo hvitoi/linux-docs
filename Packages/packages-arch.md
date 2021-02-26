@@ -11,9 +11,6 @@
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
 - `mesa`: Open-source implementation of the OpenGL specification
-- `nvidia`: NVIDIA drivers
-- `nvidia-utils`: NVIDIA drivers utilities
-- `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `gnome`: GUI
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
@@ -109,3 +106,22 @@
 - `google-earth-pro` (AUR)
 - `popcorntime-bin` (AUR)
 - `cmatrix`
+
+## NVIDIA
+
+- `nvidia`: NVIDIA drivers
+- `nvidia-utils`: NVIDIA drivers utilities
+- `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
+
+## Pipewire
+
+- `pipewire`
+- `pipewire-docs`
+- `pipewire-alsa`
+- `pipewire-pulse`
+- `pipewire-jack`
+- `xdg-desktop-portal`
+- `xdg-desktop-portal-gtk`
+- `libpipewire02`
+- `pulseeffects`
+- `gst-plugin-pipewire`
