@@ -31,7 +31,7 @@
 - `gnome-tweaks`
 - `chrome-gnome-shell`
 - `oh-my-zsh` (BIN)
-- `pulseaudio-modules-bt` (AUR)
+- `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
 - `f5vpn` (AUR)
 - `net-tools`
@@ -111,8 +111,8 @@
 ## NVIDIA
 
 - `nvidia`: NVIDIA drivers
-- `nvidia-utils`: NVIDIA drivers utilities
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
+- `nvidia-prime`
 
 ## Pipewire
 
