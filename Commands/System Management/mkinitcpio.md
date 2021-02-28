@@ -1,6 +1,6 @@
 # mkinitcpio
 
-- mkinitcpio is a Bash script used to create an initial ramdisk environment
+- mkinitcpio is a Bash script used to create an initial ramdisk environment (initramfs stage)
 - The initial ramdisk is in essence a very small environment (early userspace) which loads various kernel modules and sets up necessary things before handing over control to init
 - Config file `/etc/mkinitcpio.conf`
 

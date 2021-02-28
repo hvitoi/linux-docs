@@ -12,5 +12,4 @@ sudo nmap "192.168.1.0/24"
 
 # Aggressive scan
 sudo nmap -A -T4 "192.168.1.11"
-
 ```
