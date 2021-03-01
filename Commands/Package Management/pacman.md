@@ -1,6 +1,8 @@
 # pacman
 
+- Pacman settings `/etc/pacman.conf`
 - Mirrorlist stored at `/etc/pacman.d/mirrorlist`
+- Cache packages are stored at `/var/cache/pacman/pkg`
 
 ## Query
 
@@ -55,4 +57,20 @@ pacman -Rs
 
 # Cascade (remove all packages that depend on them)
 pacman -Rc "package"
+```
+
+## Modify
+
+```sh
+# Downgrade a kernel
+pacman -U linux-4.15.8-1-x86_64.pkg.tar.xz
+```
+
+## IgnorePkg
+
+- Skip package from being upgraded
+- Add the packages to the at `/etc/pacman.conf`
+
+```conf
+IgnorePkg=linux
 ```

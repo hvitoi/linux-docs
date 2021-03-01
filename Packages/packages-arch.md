@@ -74,6 +74,8 @@
 - `android-tools`
 - `azure-cli` (AUR)
 - `dotnet-sdk`
+- `nuget`
+- `mono`
 - `gitkraken` (AUR)
 - `diffutils`
 - `freerdp`
@@ -125,3 +127,7 @@
 - `xdg-desktop-portal-gtk`
 - `libpipewire02`
 - `gst-plugin-pipewire`
+
+## Additional firmware
+
+-
