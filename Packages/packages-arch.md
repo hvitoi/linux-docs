@@ -98,8 +98,6 @@
 - `handbrake`
 - `qbittorrent`
 - `obs-studio`
-- `texstudio`
-- `texlive-core`
 - `libreoffice-fresh`
 - `google-chrome` (AUR)
 - `spotify` (AUR)
@@ -109,6 +107,8 @@
 - `google-earth-pro` (AUR)
 - `popcorntime-bin` (AUR)
 - `cmatrix`
+- `texstudio`
+- `texlive-most`
 
 ## NVIDIA
 
