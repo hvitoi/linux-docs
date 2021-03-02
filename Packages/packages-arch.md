@@ -49,7 +49,6 @@
 - `virtualbox`
 - `virtualbox-host-modules-arch`
 - `pavucontrol`
-- `ofono` (AUR)
 
 ## Dev
 
