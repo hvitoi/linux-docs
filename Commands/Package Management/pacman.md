@@ -49,7 +49,7 @@ pacman -Ss "regex-package"
 # Remove package
 pacman -R "package"
 
-# Remote configuration files
+# Remove configuration files
 pacman -Rn "package"
 
 # Remove unnecessary dependencies

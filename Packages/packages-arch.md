@@ -123,11 +123,13 @@
 - `pipewire-alsa`
 - `pipewire-pulse`
 - `pipewire-jack`
-- `xdg-desktop-portal`
-- `xdg-desktop-portal-gtk`
 - `libpipewire02`
 - `gst-plugin-pipewire`
+- `xdg-desktop-portal`
+- `xdg-desktop-portal-gtk`
 
 ## Additional firmware
 
--
+- `aic94xx-firmware`
+- `wd719x-firmware`
+- `upd72020x-fw`
