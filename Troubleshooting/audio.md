@@ -1,6 +1,16 @@
-# Fix buzz sound when idle
+# Audio troubleshooting
 
-- At `/etc/modprobe.d/modprobe.conf`
+## Fix buzz sound when idle
+
+- Disable hibernation for this hardware at `snd_hda_intel` module
+- `/etc/modprobe.d/modprobe.conf`
+
+```conf
+# Add this line
+options snd_hda_intel power_save=0
+```
+
+or
 
 ```conf
 # Add this line

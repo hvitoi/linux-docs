@@ -12,27 +12,17 @@ modprobe v4l2loopback exclusive_caps=1 max_buffers=2 # virtual video devices
 
 # Display configuration of the modules
 modprobe -c
-modprobe -c | grep `module-name`
+modprobe -c | grep "module-name"
 ```
 
 ## Automatic module loading with systemd
 
-- To load modules upon start, modules must be defined in `/etc/modules` (deprecated)
+- To load modules upon start, modules must be defined in `/etc/modules-load.d/module-name.conf` (preferred) or `/usr/lib/modules-load.d/module-name.conf` (ok) or `/etc/modules` (deprecated)
+  - E.g., `/etc/modules-load.d/v4l2loopback.conf` with the content v4l2loopback
 
 ```conf
-# /etc/modules: kernel modules to load at boot time.
-#
 # This file contains the names of kernel modules that should be loaded
 # at boot time, one per line. Lines beginning with "#" are ignored.
-bonding
-v4l2loopback
-```
-
-- To load module upon start, modules must be defined in a file at `/etc/modules-load.d/modulename.conf` (preferred) or `/usr/lib/modules-load.d`
-- E.g., `/etc/modules-load.d/v4l2loopback.conf` with the content v4l2loopback
-
-```conf
-# /etc/modules-load.d/v4l2loopback.conf
 v4l2loopback
 ```
 
