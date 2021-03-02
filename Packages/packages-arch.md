@@ -131,6 +131,6 @@
 
 ## Additional firmware
 
-- `aic94xx-firmware`
-- `wd719x-firmware`
-- `upd72020x-fw`
+- `aic94xx-firmware` (AUR)
+- `wd719x-firmware` (AUR)
+- `upd72020x-fw` (AUR)
