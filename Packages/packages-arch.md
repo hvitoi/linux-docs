@@ -109,6 +109,7 @@
 - `cmatrix`
 - `texstudio`
 - `texlive-most`
+- `discord`
 
 ## NVIDIA
 
