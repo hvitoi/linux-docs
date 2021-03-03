@@ -10,7 +10,7 @@ bluetoothctl list
 bluetoothctl devices
 
 # Show info about a device
-bluetoothctl info `mac-addr`
+bluetoothctl info "mac-addr"
 ```
 
 ## Pairing
@@ -23,7 +23,7 @@ bluetoothctl paired-devices
 bluetoothctl scan on
 
 # Pair
-bluetoothctl pair `mac-addr`
+bluetoothctl pair "mac-addr"
 
 # Cancel pairing process
 bluetoothctl cancel-pairing `mac-addr`

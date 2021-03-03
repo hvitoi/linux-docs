@@ -1,4 +1,4 @@
-# Audio troubleshooting
+# Bluetooth troubleshooting
 
 ## Fix buzz sound when idle
 
@@ -8,13 +8,7 @@
 ```conf
 # Add this line
 options snd_hda_intel power_save=0
-```
-
-or
-
-```conf
-# Add this line
-options snd_hda_intel power_save=0 power_save_controller=N
+options snd_hda_intel power_save_controller=N # optional
 ```
 
 ## Bluetooth pairing on Windows and Linux simultaneously
@@ -56,4 +50,13 @@ HEX F082CC36B73C800C7FBA9D2225BDAFE6
 sudo -s
 cd /var/lib/bluetooth/`port-mac`/`device-mac`
 vim info # change to LinkKey to windows key
+```
+
+## Bluetooth random disconnect
+
+- Disable autosuspend for btusb
+- `/etc/modprobe.d/btusb.conf`
+
+```conf
+options btusb enable_autosuspend=n
 ```
