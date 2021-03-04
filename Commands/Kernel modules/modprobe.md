@@ -28,7 +28,7 @@ v4l2loopback
 
 ### Module default configuration
 
-- Default configuration for the modules is stored at `/etc/modprobe.d` folder
+- Default configuration for the modules is stored at `/etc/modprobe.d` or `/usr/lib/modprobe.d` folder
   - E.g., `/etc/modprobe.d/v4l2loopback.conf`
 
 ```conf

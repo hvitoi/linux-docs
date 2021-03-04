@@ -10,7 +10,6 @@
 - `intel-ucode`: Stability and security updates for Intel CPUs
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
-- `mesa`: Open-source implementation of the OpenGL specification
 - `gnome`: GUI
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
@@ -111,8 +110,11 @@
 - `texlive-most`
 - `discord`
 
-## NVIDIA
+## Video
 
+- `mesa`
+- `xf86-video-intel`
+- `xf86-video-nouveau`
 - `nvidia`: NVIDIA drivers
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `nvidia-prime`
