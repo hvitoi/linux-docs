@@ -114,7 +114,7 @@
 
 - `mesa`
 - `xf86-video-intel`
-- `xf86-video-nouveau`
+- `xf86-video-nouveau`: Nouveau
 - `nvidia`: NVIDIA drivers
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `nvidia-prime`
