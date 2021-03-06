@@ -113,6 +113,7 @@
 ## Video
 
 - `mesa`
+- `mesa-demos`
 - `xf86-video-intel`
 - `xf86-video-nouveau`
 - `nvidia`: NVIDIA drivers

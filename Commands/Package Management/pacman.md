@@ -74,3 +74,9 @@ pacman -U linux-4.15.8-1-x86_64.pkg.tar.xz
 ```conf
 IgnorePkg=linux
 ```
+
+## Last Modified packages
+
+```sh
+grep -iE 'installed|upgraded|removed' /var/log/pacman.log
+```
