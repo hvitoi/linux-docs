@@ -4,5 +4,8 @@
 
 ```bash
 # Kills a process
-kill `process-id` # Uses TERM signal by default
+kill "pid" # Uses TERM signal by default
+
+# Choose Signal
+kill -9 "pid" # SIGTERM
 ```
