@@ -14,6 +14,10 @@ ps -ef
 
 # List processes running in the current terminal!
 ps
+
+# List all processes along with additional info
+ps aux
+ps aux | grep "chrome"
 ```
 
 - `ps` always show the ps command itself in the list. Because when the processes are listed ps is currently running
