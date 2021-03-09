@@ -113,8 +113,6 @@
 ## Video
 
 - `mesa`
-- `xf86-video-intel`
-- `xf86-video-nouveau`
 - `nvidia`: NVIDIA drivers
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `nvidia-prime`
