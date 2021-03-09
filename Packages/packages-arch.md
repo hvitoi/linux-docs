@@ -119,7 +119,7 @@
 - `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
 - `nvidia-prime`
 
-## Pipewire
+## Audio
 
 - `pipewire`
 - `pipewire-docs`
@@ -130,6 +130,9 @@
 - `gst-plugin-pipewire`
 - `xdg-desktop-portal`
 - `xdg-desktop-portal-gtk`
+- `pulseaudio`
+- `pulseaudio-alsa`
+- `pulseaudio-jack`
 
 ## Additional firmware
 
