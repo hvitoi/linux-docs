@@ -9,3 +9,5 @@ dmidecode
 # type 17: RAM
 sudo dmidecode --type 17
 ```
+
+a
