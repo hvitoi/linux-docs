@@ -109,6 +109,7 @@
 - `texstudio`
 - `texlive-most`
 - `discord`
+- `apostrophe` (AUR)
 
 ## Video
 
