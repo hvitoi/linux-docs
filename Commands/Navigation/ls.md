@@ -74,3 +74,4 @@ ls -la /etc/cron.* # List the content of each folder starting with cron.
   - `^` - `ls -l | grep ^d` # List directories
 - End of line
   - `$`
+    `
