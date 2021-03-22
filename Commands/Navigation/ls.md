@@ -6,7 +6,7 @@
 
 ## Linux File system
 
-- `/boot`: Boot loader and memory test. grub.cfg
+- `/boot`: Boot loader and memory test. grub.cfg, linux kernel, etc
 - `/dev`: Devices (external devices connected to pc)
 - `/etc`: Configuration files
 - `/home`: Personal and configuration files related to one user
@@ -23,7 +23,7 @@
   - `/bin`: User binaries (commands).
   - `/lib`: C libraries required by executable in /bin or /sbin (Multi-architecture).
   - `/sbin`: System binaries. Can only be run by root user. Ex: useradd.
-  - `/local`: Programs installed by source code
+  - `/local`: Programs installed by source code manually
 - `/var`: System logs, backups, cache
 
 ## Shell
