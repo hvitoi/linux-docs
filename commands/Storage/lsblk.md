@@ -4,4 +4,5 @@
 
 ```sh
 lsblk
+lsblk -f # Additional info (including filesystem)
 ```

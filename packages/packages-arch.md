@@ -22,8 +22,8 @@
 - `chntpw`
 - `htop`
 - `grub-customizer`
-- `ntfs-3g`
-- `exfat-utils`
+- `ntfs-3g`: Support for NTFS filesystem
+- `exfatprogs`: This is preferred over exfat-utils (deprecated)
 - `vim`
 - `tilix`
 - `ttf-droid`
