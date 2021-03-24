@@ -2,6 +2,7 @@
 
 - `Linux File System` uses the `File Hierarchy Standard` (FHS) structure
 - `Linux File System` examples: EXT3, EXT4, XFS
+- File systems suported by linux kernel are listed at `/proc/filesystems`
 
 ## File Hierarchy Standard
 

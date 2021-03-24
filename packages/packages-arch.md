@@ -23,7 +23,7 @@
 - `htop`
 - `grub-customizer`
 - `ntfs-3g`: Support for NTFS filesystem
-- `exfatprogs`: This is preferred over exfat-utils (deprecated)
+- `exfatprogs`: This is preferred over exfat-utils (deprecated). It might be necessary to create a symlink sudo ln -s /usr/sbin/mkfs.exfat /usr/local/sbin/mkexfatfs
 - `vim`
 - `tilix`
 - `ttf-droid`
@@ -37,6 +37,7 @@
 - `wireshark-qt`
 - `rclone`
 - `nmap`
+- `gparted`
 
 ## I/O
 
