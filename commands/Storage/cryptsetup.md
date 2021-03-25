@@ -2,20 +2,25 @@
 
 - Create an empty partition (with no filesystem)
 
-## LUKS Format
+## Format and encrypt a partition
 
 ```sh
-# First make sure no partitions are created in the drive (free space)
-cryptsetup luksFormat "/dev/sdx"
+# A partition or the whole disk can be encrypted
+cryptsetup luksFormat "/dev/sdx" # or /dev/sdx1 for a single partition
+cryptsetup luksFormat "/dev/sdx" --verbose --verify-passphase
 ```
 
-## Open/Unlock drive
+## Unlock/Lock drive
 
-- Opened/unlocked drives are mapped to `/dev/mapper/drive-name`
+- Unlocked drives are mapped to `/dev/mapper/drive-name`
 - Once opened, you it's completely treated as any other hard drive
 
 ```sh
-cryptsetup luksOpen "/dev/sdx" "drive-name"
+# Unlock
+cryptsetup luksOpen "/dev/sdx" "drive-name" # /dev/sdx1 to open a partition
+
+# Lock
+cryptsetup luksClose "drive-name"
 ```
 
 ## Create filesystem

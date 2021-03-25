@@ -38,6 +38,7 @@
 - `rclone`
 - `nmap`
 - `gparted`
+- `veracrypt`
 
 ## I/O
 
