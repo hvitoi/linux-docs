@@ -128,10 +128,9 @@
 - `pipewire-alsa`
 - `pipewire-pulse`
 - `pipewire-jack`
-- `libpipewire02`
 - `gst-plugin-pipewire`
-- `xdg-desktop-portal`
-- `xdg-desktop-portal-gtk`
+- `xdg-desktop-portal`: screen sharing on browsers
+- `xdg-desktop-portal-gtk`: screen sharing on browsers with gnome
 - `pulseaudio`
 - `pulseaudio-alsa`
 - `pulseaudio-jack`
