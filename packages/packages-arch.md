@@ -28,7 +28,6 @@
 - `tilix`
 - `ttf-droid`
 - `gnome-tweaks`
-- `chrome-gnome-shell`
 - `oh-my-zsh` (BIN)
 - `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
@@ -88,6 +87,8 @@
 - `python-pip`
 - `nvm` (AUR)
 - `rust`
+- `go`
+- `istio`
 
 ## Apps
 
