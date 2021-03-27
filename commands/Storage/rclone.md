@@ -1,8 +1,11 @@
 # rclone
 
+- Config file is stored at `~/.config/rclone/rclone.conf`
+
 ```sh
 # Configure remote storage server
 rclone config
+rclone config file # print config file location
 
 # Get all remotes
 rclone listremotes
@@ -54,3 +57,15 @@ rclone sync -P `/local/path` `remote`:`/remote/path` # real-time transfer statis
 rclone mount `remote`:`/remote/path` `/local/path`
 rclone mount hvitoi:/ /mnt/hvitoi
 ```
+
+## Crypt remote
+
+- `crypt` remote takes another remote as part of its configuration
+- It encrypts data and hands it over to the underlying remote
+- Everything crypt does is to encrypt and decrypt data
+
+1. Create new remote
+1. Choose type "crypt" (Encrypt/Decrypt a remote)
+1. Select the origin remote
+1. Create passwords
+1. Done

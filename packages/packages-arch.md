@@ -38,6 +38,7 @@
 - `nmap`
 - `gparted`
 - `veracrypt`
+- `chrome-gnome-shell`: gnome shell integration with web browsers
 
 ## I/O
 
