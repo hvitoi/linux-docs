@@ -18,11 +18,14 @@ rclone about hvitoi:/
 ## List
 
 ```sh
-# Print files
-rclone lsf `remote`:`path`
+# Files
+rclone lsf "remote":"path"
 
 # Tree
-rclone tree `remote`:`path`
+rclone tree "remote":"path"
+
+# Text-based UI
+rclone ncdu "remote":"path"
 ```
 
 ## Copy
@@ -33,6 +36,18 @@ rclone tree `remote`:`path`
 # Copy the content
 rclone copy `/local/path` `remote`:`/remote/path`
 rclone copy ~/Documents/my-folder hvitoi:/my-folder
+```
+
+## Remove
+
+```sh
+# Remove a single file
+rclone deletefile "remote":"remote/path"
+
+# Remove a path and all of its contents
+rclone purge "remote":"remote/path"
+rclone purge "remote":"remote/path" --dry-run
+rclone purge "remote":"remote/path" --interactive
 ```
 
 ## Sync
@@ -69,3 +84,8 @@ rclone mount hvitoi:/ /mnt/hvitoi
 1. Select the origin remote
 1. Create passwords
 1. Done
+
+```sh
+# checks a remote against a crypted remote. It works by reading the nonce from each file on the crypted remote
+rclone cryptcheck "/path/to/files" "remote-crypt:path"
+```
