@@ -54,13 +54,16 @@ rclone purge "remote":"remote/path" --interactive
 
 ```sh
 # dry-run
-rclone sync --dry-run `/local/path` `remote`:`/remote/path` # "test" the sync, but do not perform data transfer
+rclone sync --dry-run "/local/path" "remote":"/remote/path" # "test" the sync, but do not perform data transfer
 
 # interactive mode
-rclone sync -i `/local/path` `remote`:`/remote/path` # prompt for decisions
+rclone sync -i "/local/path" "remote":"/remote/path" # prompt for decisions
 
 # progress mode
-rclone sync -P `/local/path` `remote`:`/remote/path` # real-time transfer statistics
+rclone sync -P "/local/path" "remote":"/remote/path" # real-time transfer statistics
+
+# verbose
+rclone sync -v "/local/path" "remote":"/remote/path" # show transferred files
 ```
 
 ## Mount
