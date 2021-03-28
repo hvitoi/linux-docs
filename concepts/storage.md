@@ -20,29 +20,26 @@ umount /data # Unmount
 - The advantage is to easily add/remove new disks to a `volume group`
 
 ```sh
-# 1 - Attach new hard disk
----
+# Create a new partition
+fdisk "/dev/sdx" # Create (n) a new primary (n) partition. Choose (t) LVM Linux type
 
-# 2 - Create partition
-fdisk /dev/sdx # Create (n) a new primary (n) partition. Choose (t) LVM Linux type
-
-# 3 - Create physical volumes
-pvcreate /dev/sdx1 # Create volume of the partition
+# Create a physical volume (it's created on an existing partition)
+pvcreate "/dev/sdx1"
 pvdisplay
 
-# 4 - Create volume groups
-vgcreate my-vg /dev/sdx1 # Assign vg to the partition
-vgdisplay my-vg
+# Create volume group and assign it to a physical volume
+vgcreate "volume-group" "/dev/sdx1"
+vgdisplay "volume-group"
 
-# 5 - Create logical volumes
-lvcreate -n my-lv --size 1000M my-vg
+# Create a logical volume (attached to a volume group)
+lvcreate -n "logical-volume" --size 1000M "volume-group"
 lvdisplay
 
-# 6 - Make filesystem
-mkfs.xfs /dev/my-vg/my-lv
+# Make filesystem
+mkfs.xfs "/dev/vg/lv"
 
-# 7 - Mount filesystem
-mount /dev/my-vg/my-lv /data
+# Mount filesystem
+mount "/dev/vg/lv" "/data"
 df -h
 ```
 

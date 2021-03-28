@@ -42,7 +42,7 @@ mount "/dev/mapper/drive-name" "/mnt/data"
 ## LUKS header
 
 ```sh
-# Show LUKS header unformation (including key slots/passwords)
+# Show LUKS header information (including key slots/passwords)
 cryptsetup luksDump "/dev/sdx1"
 
 # Backup or Restore the LUKS header (it's very important because if the header is corrupted, the whole disk is corrupted)
