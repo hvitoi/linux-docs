@@ -39,6 +39,9 @@
 - `gparted`
 - `veracrypt`
 - `chrome-gnome-shell`: gnome shell integration with web browsers
+- `ffmpegthumbnailer`: video thumbnail support
+- `gst-libav`: video thumbnail support
+- `gst-plugins-ugly`: video thumbnail support
 
 ## I/O
 
