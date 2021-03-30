@@ -64,6 +64,9 @@ rclone sync -P "/local/path" "remote":"/remote/path" # real-time transfer statis
 
 # verbose
 rclone sync -v "/local/path" "remote":"/remote/path" # show transferred files
+
+# bandwidth
+rclone sync -v "/local/path" "remote":"/remote/path" --bwlimit 1.5M
 ```
 
 ## Filters
