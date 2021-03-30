@@ -11,7 +11,7 @@ rclone config file # print config file location
 rclone listremotes
 
 # Get storage info about a remote
-rclone about `remote`:`path`
+rclone about "remote":"path"
 rclone about hvitoi:/
 ```
 
@@ -34,7 +34,7 @@ rclone ncdu "remote":"path"
 
 ```sh
 # Copy the content
-rclone copy `/local/path` `remote`:`/remote/path`
+rclone copy "/local/path" "remote":"/remote/path"
 rclone copy ~/Documents/my-folder hvitoi:/my-folder
 ```
 
@@ -66,13 +66,19 @@ rclone sync -P "/local/path" "remote":"/remote/path" # real-time transfer statis
 rclone sync -v "/local/path" "remote":"/remote/path" # show transferred files
 ```
 
+## Filters
+
+```sh
+rclone sync "/local/path" "remote":"/remote/path" --exclude "node_modules/"
+```
+
 ## Mount
 
 - Mount remote to a mount point
 
 ```sh
 # mount
-rclone mount `remote`:`/remote/path` `/local/path`
+rclone mount "remote":"/remote/path" "/local/path"
 rclone mount hvitoi:/ /mnt/hvitoi
 ```
 
