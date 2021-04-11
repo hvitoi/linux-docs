@@ -42,6 +42,7 @@
 - `ffmpegthumbnailer`: video thumbnail support
 - `gst-libav`: video thumbnail support
 - `gst-plugins-ugly`: video thumbnail support
+- `networkmanager-openconnect`: vpn client
 
 ## I/O
 
