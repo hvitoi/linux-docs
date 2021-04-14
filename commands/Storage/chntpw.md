@@ -4,7 +4,8 @@
 - At `/media/hvitoi/Windows/Windows/System32/config`
 
 ```sh
-sudo chntpw -e SYSTEM
+# Regedit
+chntpw -e SYSTEM
 
 # Check user records in Security Account Manager (SAM)
 chntpw -l SAM # list
