@@ -94,6 +94,7 @@
 - `rust`
 - `go`
 - `istio`
+- `filezilla`
 
 ## Apps
 
