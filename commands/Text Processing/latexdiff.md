@@ -11,8 +11,8 @@ git latexdiff "HEAD^" "HEAD" \
   --lualatex \
   --bibtex \
   --ignore-latex-errors \
-  --type "CFONT" \
-  --output "~/Downloads/diff.pdf"
+  --type "UNDERLINE" \
+  --output "/home/hvitoi/Downloads/diff.pdf"
 ```
 
 - Markup styles
