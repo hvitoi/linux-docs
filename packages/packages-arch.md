@@ -43,6 +43,7 @@
 - `gst-libav`: video thumbnail support
 - `gst-plugins-ugly`: video thumbnail support
 - `networkmanager-openconnect`: vpn client
+- `jq`: JSON parsing
 
 ## I/O
 
