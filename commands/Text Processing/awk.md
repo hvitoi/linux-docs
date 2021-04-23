@@ -41,3 +41,18 @@ awk '{if($NF == "Vitoi") print $0;}' family
 # Number of columns
 ls -l | awk '{print NF}'
 ```
+
+```sh
+NAMESPACES=(desenvolvimento esteira-01 esteira-02 preproducao prodlike)
+SERVICES=(disponibilidade landing-page product-catalog-fixa cart-fixa leads content)
+for s in "${SERVICES[@]}"
+do
+  echo $s;
+  for n in "${NAMESPACES[@]}"
+  do
+    POD=`kubectl get pod -n "$n" | grep "$s" | awk '{ print $1 }' | head -n "1"`
+    echo "\t$n:" `kubectl get pod -n "$n" $POD -o "json" | jq ".spec.containers[0].image" | awk -F "\"" '{print $2}' | awk -F "/" '{print $2}' | awk -F ":" '{print $2}'`
+  done
+  echo "\n";
+done
+```
