@@ -3,15 +3,17 @@
 - Make file system for a partition
 
 ```sh
+# FAT 32 partition
+mkfs.fat -F32 "/dev/sdx1"
+
+
 # Make a XFS partition
-mkfs.xfs `partition`
-mkfs.xfs /dev/sdx1
-mount /dev/sdx1 /data
+mkfs.xfs "/dev/sdx1"
+mount "/dev/sdx1" "/data"
 
 # Make a EXT4 partition
-mkfs.ext4 `partition`
-mkfs.ext4 /dev/sdx1
-mount /dev/sdx1 /data
+mkfs.ext4 "/dev/sdx1"
+mount "/dev/sdx1" "/data"
 ```
 
 ## Remove reserved space
