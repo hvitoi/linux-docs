@@ -67,6 +67,14 @@ rclone sync -v "/local/path" "remote":"/remote/path" # show transferred files
 
 # bandwidth
 rclone sync -v "/local/path" "remote":"/remote/path" --bwlimit 1.5M
+
+# preferred
+rclone sync \
+  "/local/folder" \
+  "remote:/remote/folder" \
+  --verbose \
+  --progress \
+  --exclude "node_modules/"
 ```
 
 ## Filters
