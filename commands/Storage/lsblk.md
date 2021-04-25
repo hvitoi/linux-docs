@@ -4,5 +4,6 @@
 
 ```sh
 lsblk
-lsblk -f # Additional info (including filesystem)
+lsblk -f # output info about filesystems
+lsblk -f # output info about permissions
 ```
