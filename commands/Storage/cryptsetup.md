@@ -135,7 +135,7 @@ Requires=user@1000.service
 Before=user@1000.service
 
 [Mount]
-Where=/home/hvitoi
+Where=/media/hvitoi/moon
 What=/dev/mapper/moon
 Type=ext4
 Options=defaults,relatime,compress=zstd
@@ -144,13 +144,13 @@ Options=defaults,relatime,compress=zstd
 RequiredBy=user@1000.service
 ```
 
-- Create file `/etc/systemd/system/cryptsetup-username.service` for locking after unmounting
+- Create file `/etc/systemd/system/cryptsetup-hvitoi.service` for locking after unmounting
 
 ```conf
 [Unit]
 DefaultDependencies=no
-BindsTo=dev-PARTITION.device
-After=dev-PARTITION.device
+BindsTo=dev-sda.device
+After=dev-sda.device
 BindsTo=dev-mapper-moon.device
 Requires=moon.mount
 Before=moon.mount
