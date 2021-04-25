@@ -1,8 +1,11 @@
 # pacman
 
 - Pacman settings `/etc/pacman.conf`
+
+## Mirrors
+
 - Mirrorlist stored at `/etc/pacman.d/mirrorlist`
-- Cache packages are stored at `/var/cache/pacman/pkg`
+- Official list is available from the package `pacman-mirrorlist`
 
 ## Query
 
@@ -79,4 +82,14 @@ IgnorePkg=linux
 
 ```sh
 grep -iE 'installed|upgraded|removed' /var/log/pacman.log
+```
+
+## Cache
+
+- Cache packages are stored at `/var/cache/pacman/pkg`
+- Requires the `pacman-contrib` package in order to clean pacman cache
+
+```sh
+paccache -r
+pacman -Sc # more aggressive (doesn't keep old versions)
 ```
