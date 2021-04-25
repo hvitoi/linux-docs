@@ -1,16 +1,33 @@
 # systemctl
 
-- Manage processes
-- New version of the legacy `service` command
 - `systemctl` is the interaction with `systemd`
+- New version of the legacy `service` command
+
+## Units
+
+- Units can be `services` (.service), `mount points` (.mount), `devices` (.device) or `sockets` (.socket)
+- `/usr/lib/systemd/system/`: units provided by installed packages
+- `/etc/systemd/system/`: units installed by the system administrator
 
 ```bash
-systemctl status `service`
-systemctl start `service`
-systemctl restart `service`
-systemctl stop `service`
-systemctl enable `service` # Enable run the service upon startup
-sudo systemctl daemon-reload
+# Analyzing the system state
+systemctl status
+systemctl status "unit.service" # status of a specific unit
+
+# Checking the unit status
+systemctl
+systemctl list-units # same output
+systemctl --failed # failed units
+
+# Starting, restarting, reloading a unit
+systemctl start "unit"
+systemctl stop "unit"
+systemctl restart "unit"
+sudo systemctl daemon-reload # reload all
+
+#Enabling a unit
+systemctl enable "unit"
+systemctl disable "unit"
 
 ## List all
 systemctl -a
