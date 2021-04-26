@@ -160,6 +160,18 @@ case $choice in
 esac
 ```
 
+```sh
+# Ternary
+case "$b" in
+ 5) a=$c ;;
+ *) a=$d ;;
+esac
+
+# Ternary shorter
+[[ $b = 5 ]] && a="$c" || a="$d"
+
+```
+
 ## Check server connectivity
 
 ```bash
