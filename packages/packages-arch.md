@@ -83,6 +83,7 @@
 - `helm`
 - `android-tools`
 - `azure-cli` (AUR)
+- `azure-functions-core-tools-bin` (AUR)
 - `dotnet-sdk`
 - `nuget`
 - `mono`
