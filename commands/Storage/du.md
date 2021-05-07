@@ -1,11 +1,18 @@
 # du
 
 ```bash
-# File usage in the current directory
+# Size of each folder inside the current folder
 du
+du "/directory/"
 
-# Size of the current directory
-du -sh `directory`
-du -sh .
-du -sh /var/lib/docker # docker image folder
+# Size of each folder and individual files
+du -a
+
+# Human readable
+du -h
+
+# Show total size
+du -s
+du -sh
+du -sh "/var/lib/docker" # docker image folder
 ```

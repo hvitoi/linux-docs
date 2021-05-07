@@ -2,8 +2,18 @@
 
 - Sorts in alphabetical order
 
-```bash
-sort `file`
-sort -r `file` # Reverse order
-sort -k 2 `file` # Sort by the second column
+```sh
+# alphabetically
+sort "file"
+
+# numerically
+sort -n "file"
+sort --numeric-short "file"
+
+# reverse
+sort -r "file"
+
+# key
+sort -k "2" "file" # Sort by the second column
+sort --key "2" "file"
 ```
