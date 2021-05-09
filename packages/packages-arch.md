@@ -48,6 +48,7 @@
 - `git-latexdiff`
 - `fdupes`: find duplicate files
 - `testdisk`: data recovery utility
+- `unrar`: winrar
 
 ## I/O
 
