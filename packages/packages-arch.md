@@ -102,6 +102,7 @@
 - `go`
 - `istio`
 - `filezilla`
+- `ngrok` (AUR): expose your localhost
 
 ## Apps
 
@@ -125,7 +126,7 @@
 - `texstudio`
 - `texlive-most`
 - `discord`
-- `apostrophe` (AUR)
+- `typora` (AUR)
 
 ## Video
 
