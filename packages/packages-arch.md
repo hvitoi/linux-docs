@@ -103,6 +103,7 @@
 - `istio`
 - `filezilla`
 - `ngrok` (AUR): expose your localhost
+- `mycli` (AUR): MySQL CLI with autocomplete
 
 ## Apps
 
