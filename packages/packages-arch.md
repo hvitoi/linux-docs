@@ -49,6 +49,7 @@
 - `fdupes`: find duplicate files
 - `testdisk`: data recovery utility
 - `unrar`: winrar
+- `pdfarrange`: pdf manipulation
 
 ## I/O
 
