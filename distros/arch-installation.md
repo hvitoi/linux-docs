@@ -2,12 +2,12 @@
 
 - Installation image: <https://archlinux.org/download/>
 
-```sh
+```shell
 # Connect to Wi-Fi
 iwctl
 [iwd] device list
-[iwd] station `device` get-networks
-[iwd] station `device` connect `ssid`
+[iwd] station "device" get-networks
+[iwd] station "device" connect "ssid"
 ping archlinux.org
 
 # Update system clock
@@ -15,66 +15,81 @@ timedatectl set-ntp true
 
 # Partitions
 lsblk
-fdisk -l # List disks
-mkfs.ext4 /dev/sdx1
-mkswap /dev/sdx2
+fdisk -l # Optionally use cgdisk
+mkfs.vfat "/dev/sdx1" # efi partition (use 300 MB)
+mkfs.ext4 "/dev/sdx2" # root partition
+mkfs.ext4 "/dev/sdx3" # home partition
 
-# Mount root partition
-mount /dev/sdx1 /mnt
-swapon /dev/sdx2
+# Swap
+mkswap "/dev/sdx4" # swap partition
+dd if="/dev/zero" of="/swapfile" bs="1M" count="1024" status="progress" # 1GB swap file (only for UEFI systems)
+chmod 600 "/swapfile"
+mkswap "/swapfile"
+swapon "/dev/sdx4" # or /swapfile
+
+# Mount partitions
+mount "/dev/sdx2" "/mnt" # root
+mkdir "/mmt/{boot,home}"
+mount "/dev/sdx1" "/mnt/boot" # boot/efi
+mount "/dev/sdx3" "/mnt/home" # home
 df -h # Show mounted partitions
 
 # Select mirrors
-vi /etc/pacman.d/mirrorlist
+vi "/etc/pacman.d/mirrorlist"
 pacman -Syy # Test mirrors
 
 # Install system
-pacstrap /mnt base base-devel linux-lts linux-firmware vim
+pacstrap "/mnt" "base" "base-devel" "linux" "linux-firmware" "linux-headers"
 
 # Generate fstab
-genfstab -U /mnt >> /mnt/etc/fstab
+genfstab -U "/mnt" >> "mnt/etc/fstab" # fstab for partitions mounted at /mnt
 
 # Chroot
-arch-chroot /mnt
+arch-chroot "/mnt"
 
-# Language and region
-ln -sf /usr/share/zoneinfo/Region/City /etc/localtime
+# Region
+ln -sf "/usr/share/zoneinfo/Region/City" "/etc/localtime"
 hwclock --systohc
-locale-gen  # Edit /etc/locale.gen first
-# Create /etc/locale.conf with LANG=en_US.UTF-8
+
+# Language
+sed -i '177s/.//' /etc/locale.gen # Edit /etc/locale.gen
+locale-gen
+echo "LANG=en_US.UTF-8" >> /etc/locale.conf # Create /etc/locale.conf
 
 # Hostname and hosts
-/etc/hostname
-#yourhostname
-/etc/hosts
-#127.0.0.1 localhost
-#::1 localhost
+echo "yourhostname" >> /etc/hostname
+echo "127.0.0.1 localhost" >> /etc/hosts
+echo "::1 localhost" >> /etc/hosts
+echo "127.0.1.1 arch.localdomain arch" >> /etc/hosts
 
 # Root password
 passwd
+root:password | chpasswd # optional
 
 # Install additional packages
-pacman -S intel-ucode bluez bluez-utils mesa nvidia nvidia-utils gnome zsh
+pacman -S  "intel-ucode" "mesa" "nvidia" "nvidia-utils" "nvidia-settings" "nvidia-prime" "networkmanager" "bluez" "bluez-utils" # firmware
+pacman -S "grub" "efibootmgr" "os-prober" # boot
+pacman -S "vim" "zsh" "ntfs-3g" # Utilities
+#pacman -S "network-manager-applet" "dialog" "wpa_supplicant" "mtools" "dosfstools" "reflector" "avahi" "xdg-user-dirs" "xdg-utils" "gvfs" "gvfs-smb" "nfs-utils" "inetutils" "dnsutils" "cups" "hplip" "alsa-utils" "pipewire" "pipewire-alsa" "pipewire-pulse" "pipewire-jack" "bash-completion" "openssh" "rsync" "reflector" "acpi" "acpi_call" "tlp" "virt-manager" "qemu" "qemu-arch-extra" "edk2-ovmf" "bridge-utils" "dnsmasq" "vde2" "openbsd-netcat" "iptables-nft" "ipset" "firewalld" "flatpak" "sof-firmware" "nss-mdns" "acpid" "terminus-font"
+pacman -S  "gnome" # (optional)
 
 # Install grub
-pacman -S grub efibootmgr os-prober
-mkdir /efi
-mount /dev/sdx1 /efi
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-grub-mkconfig -o /boot/grub/grub.cfg
+mount "/dev/sdx1" "/boot"
+grub-install --target="x86_64-efi" --efi-directory="/boot" --bootloader-id="GRUB"
+grub-mkconfig -o "/boot/grub/grub.cfg"
 
 # Create user
-useradd -m -d /home/hvitoi -s /bin/zsh hvitoi
-usermod -aG wheel hvitoi
-passwd hvitoi
+useradd -m -d "/home/hvitoi" -s "/bin/zsh" "hvitoi"
+usermod -aG "wheel" "hvitoi"
+passwd "hvitoi"
 
 # Configure sudo for the user
 EDITOR=vim visudo # Uncomment %wheel ALL=(ALL) ALL
 
 # Enable services
-systemctl enable gdm.service
-systemctl enable NetworkManager.service
-systemctl enable bluetooth.service
+systemctl enable "gdm.service"
+systemctl enable "NetworkManager.service"
+systemctl enable "bluetooth.service"
 
 # Reboot (first exit chroot)
 reboot

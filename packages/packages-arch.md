@@ -7,16 +7,32 @@
 - `linux`: The Linux LTS kernel and modules
 - `linux-firmware`: Firmware files for Linux
 - `linux-headers`: Headers and scripts for building modules for the Linux kernel
+
+## Firmware
+
 - `intel-ucode`: Stability and security updates for Intel CPUs
+- `mesa`
+- `nvidia`: NVIDIA drivers
+- `nvidia-utils`: NVIDIA utils
+- `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
+- `nvidia-prime`
+- `networkmanager`: networking
 - `bluez`: Daemons for the bluetooth protocol stack
 - `bluez-utils`: Development and debugging utilities for the bluetooth protocol stack
-- `gnome`: GUI
+- `aic94xx-firmware` (AUR)
+- `wd719x-firmware` (AUR)
+- `upd72020x-fw` (AUR)
+
+## Boot
+
 - `grub`: GNU GRand Unified Bootloader
 - `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
 - `os-prober`:Utility to detect other OSes on a set of drives
 
-## System Utilities
+## Utilities
 
+- `vim`
+- `oh-my-zsh` (BIN)
 - `dmidecode`
 - `dnsutils`
 - `chntpw`
@@ -24,11 +40,9 @@
 - `grub-customizer`
 - `ntfs-3g`: Support for NTFS filesystem
 - `exfatprogs`: This is preferred over exfat-utils (deprecated). It might be necessary to create a symlink sudo ln -s /usr/sbin/mkfs.exfat /usr/local/sbin/mkexfatfs
-- `vim`
 - `tilix`
 - `ttf-droid`
 - `gnome-tweaks`
-- `oh-my-zsh` (BIN)
 - `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
 - `f5vpn` (AUR)
@@ -131,13 +145,6 @@
 - `discord`
 - `typora` (AUR)
 
-## Video
-
-- `mesa`
-- `nvidia`: NVIDIA drivers
-- `nvidia-settings`: Tool for configuring the NVIDIA graphics driver
-- `nvidia-prime`
-
 ## Audio
 
 - `pipewire`
@@ -151,9 +158,3 @@
 - `pulseaudio`
 - `pulseaudio-alsa`
 - `pulseaudio-jack`
-
-## Additional firmware
-
-- `aic94xx-firmware` (AUR)
-- `wd719x-firmware` (AUR)
-- `upd72020x-fw` (AUR)
