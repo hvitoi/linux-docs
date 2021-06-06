@@ -67,11 +67,10 @@ passwd
 root:password | chpasswd # optional
 
 # Install additional packages
-pacman -S  "intel-ucode" "mesa" "nvidia" "nvidia-utils" "nvidia-settings" "nvidia-prime" "networkmanager" "bluez" "bluez-utils" # firmware
 pacman -S "grub" "efibootmgr" "os-prober" # boot
-pacman -S "vim" "zsh" "ntfs-3g" # Utilities
-#pacman -S "network-manager-applet" "dialog" "wpa_supplicant" "mtools" "dosfstools" "reflector" "avahi" "xdg-user-dirs" "xdg-utils" "gvfs" "gvfs-smb" "nfs-utils" "inetutils" "dnsutils" "cups" "hplip" "alsa-utils" "pipewire" "pipewire-alsa" "pipewire-pulse" "pipewire-jack" "bash-completion" "openssh" "rsync" "reflector" "acpi" "acpi_call" "tlp" "virt-manager" "qemu" "qemu-arch-extra" "edk2-ovmf" "bridge-utils" "dnsmasq" "vde2" "openbsd-netcat" "iptables-nft" "ipset" "firewalld" "flatpak" "sof-firmware" "nss-mdns" "acpid" "terminus-font"
-pacman -S  "gnome" # (optional)
+pacman -S  "intel-ucode" "mesa" "nvidia" "nvidia-utils" "nvidia-settings" "nvidia-prime" "networkmanager" "bluez" "bluez-utils" # firmware
+pacman -S "vim" "zsh" # Utilities
+pacman -S "gnome" # (optional)
 
 # Install grub
 mount "/dev/sdx1" "/boot"
@@ -87,18 +86,13 @@ passwd "hvitoi"
 EDITOR=vim visudo # Uncomment %wheel ALL=(ALL) ALL
 
 # Enable services
-systemctl enable "gdm.service"
+systemctl enable "gdm.service" # for gnome only
 systemctl enable "NetworkManager.service"
 systemctl enable "bluetooth.service"
+
+# Unmount everything
+umount -a
 
 # Reboot (first exit chroot)
 reboot
 ```
-
-## Drivers
-
-==> WARNING: Possibly missing firmware for module: aic94xx
-==> WARNING: Possibly missing firmware for module: wd719x
-==> WARNING: Possibly missing firmware for module: xhci_pci
-
-( 7/10) Updating linux initcpios...

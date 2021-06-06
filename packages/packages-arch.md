@@ -8,6 +8,12 @@
 - `linux-firmware`: Firmware files for Linux
 - `linux-headers`: Headers and scripts for building modules for the Linux kernel
 
+## Boot
+
+- `grub`: GNU GRand Unified Bootloader
+- `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
+- `os-prober`:Utility to detect other OSes on a set of drives
+
 ## Firmware
 
 - `intel-ucode`: Stability and security updates for Intel CPUs
@@ -23,11 +29,35 @@
 - `wd719x-firmware` (AUR)
 - `upd72020x-fw` (AUR)
 
-## Boot
+## Audio
 
-- `grub`: GNU GRand Unified Bootloader
-- `efibootmgr`: Linux user-space application to modify the EFI Boot Manager
-- `os-prober`:Utility to detect other OSes on a set of drives
+- `pipewire`
+- `pipewire-docs`
+- `pipewire-alsa`
+- `pipewire-pulse`
+- `pipewire-jack`
+- `gst-plugin-pipewire`
+- `xdg-desktop-portal`: screen sharing on browsers
+- `xdg-desktop-portal-gtk`: screen sharing on browsers with gnome
+- `xdg-desktop-portal-wlr`: screen sharing on browsers with wayland root
+- `pulseaudio`
+- `pulseaudio-alsa`
+- `pulseaudio-jack`
+
+## GUI
+
+- `sway`: Window Manager for Wayland (alternative to xorg i3)
+- `swaylock`: lock screen
+- `swayidle`
+- `xorg-xwayland`: compatibility layer between xorg and wayland
+- `dmenu`: menu bar
+- `gdm`: graphical display manager. Enable gdm.service
+- `ly-git` (AUR): console display manager. Enable ly.service
+
+## Fonts
+
+- `ttf-droid`
+- `ttf-font-awesome`
 
 ## Utilities
 
@@ -39,9 +69,10 @@
 - `chntpw`
 - `htop`
 - `grub-customizer`
-- `exfatprogs`: This is preferred over exfat-utils (deprecated). It might be necessary to create a symlink sudo ln -s /usr/sbin/mkfs.exfat /usr/local/sbin/mkexfatfs
+- `exfatprogs`: Preferred over exfat-utils (deprecated). ln -s "/usr/sbin/mkfs.exfat" "/usr/local/sbin/mkexfatfs"
 - `tilix`
-- `ttf-droid`
+- `alacritty`: default terminal in sway
+
 - `gnome-tweaks`
 - `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
@@ -76,7 +107,7 @@
 - `virtualbox-host-modules-arch`
 - `pavucontrol`
 
-## Dev
+## Development
 
 - `visual-studio-code-bin` (AUR)
 - `curl`
@@ -145,16 +176,45 @@
 - `discord`
 - `typora` (AUR)
 
-## Audio
+## Others
 
-- `pipewire`
-- `pipewire-docs`
-- `pipewire-alsa`
-- `pipewire-pulse`
-- `pipewire-jack`
-- `gst-plugin-pipewire`
-- `xdg-desktop-portal`: screen sharing on browsers
-- `xdg-desktop-portal-gtk`: screen sharing on browsers with gnome
-- `pulseaudio`
-- `pulseaudio-alsa`
-- `pulseaudio-jack`
+- `network-manager-applet`
+- `dialog`
+- `wpa_supplicant`
+- `mtools`
+- `dosfstools`
+- `reflector`
+- `avahi`
+- `xdg-user-dirs`
+- `xdg-utils`
+- `gvfs`
+- `gvfs-smb`
+- `nfs-utils`
+- `inetutils`
+- `dnsutils`
+- `cups`
+- `hplip`
+- `alsa-utils`
+- `bash-completion`
+- `openssh`
+- `rsync`
+- `reflector`
+- `acpi`
+- `acpi_call`
+- `tlp`
+- `virt-manager`
+- `qemu`
+- `qemu-arch-extra`
+- `edk2-ovmf`
+- `bridge-utils`
+- `dnsmasq`
+- `vde2`
+- `openbsd-netcat`
+- `iptables-nft`
+- `ipset`
+- `firewalld`
+- `flatpak`
+- `sof-firmware`
+- `nss-mdns`
+- `acpid`
+- `terminus-font`

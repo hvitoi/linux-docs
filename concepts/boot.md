@@ -14,12 +14,12 @@
 
 - 0, 1 and 6 are the main run levels
 
-```sh
+```shell
 # Tells the current run level of the session
 who -r # Usually 5 (networking with gui)
 ```
 
-```sh
+```shell
 # Set default run level (5 by default)
 systemctl set-default `new-target`
 ```
@@ -81,9 +81,8 @@ You are logged in as `whoami`
 PrintMotd no
 ```
 
-- Restart sshd service
-
-```sh
+```shell
+# Restart sshd service
 systemctl restart sshd
 ```
 
@@ -91,25 +90,22 @@ systemctl restart sshd
 
 ### Installation
 
-```sh
-pacman -S grub efibootmgr os-prober
-mkdir /efi
-mount /dev/sdx1 /efi
-grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
-grub-mkconfig -o /boot/grub/grub.cfg
+```shell
+# Arch
+pacman -S "grub" "efibootmgr" "os-prober"
+mount "/dev/sdx1" "/boot"
+grub-install --target="x86_64-efi" --efi-directory="/boot" --bootloader-id="GRUB"
+grub-mkconfig -o "/boot/grub/grub.cfg"
 ```
 
-### Repair
-
-```sh
-sudo mount /dev/sda3 /mnt
+```shell
+# Non-arch
+sudo mount "/dev/sdx3" "/mnt"
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
 sudo chroot /mnt
-```
 
-```sh
-mount /dev/sda1 /boot/efi
-grub-install /dev/sda
+mount "/dev/sda1" "/boot"
+grub-install "/dev/sda"
 update-grub
 ```
 

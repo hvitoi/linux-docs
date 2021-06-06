@@ -21,8 +21,25 @@ linux /boot/vmlinuz-linux root=UUID=0a3407de-014b-458b-b5c1-848e92a327a3 rw quie
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 ```
 
-= And then automatically re-generate the `grub.cfg` file with:
+- And then automatically re-generate the `grub.cfg` file with:
 
 ```sh
-grub-mkconfig -o /boot/grub/grub.cfg
+grub-mkconfig -o "/boot/grub/grub.cfg"
+```
+
+## Add parameters via initcpio
+
+- Config file `/etc/mkinitcpio.conf`
+- Modify the `MODULES` section
+
+```conf
+MODULES=(i915)
+```
+
+```sh
+# All presets
+mkinitcpio -P
+
+# Only linux kernel
+mkinitcpio -p linux
 ```
