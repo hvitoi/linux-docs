@@ -72,7 +72,6 @@
 - `exfatprogs`: Preferred over exfat-utils (deprecated). ln -s "/usr/sbin/mkfs.exfat" "/usr/local/sbin/mkexfatfs"
 - `tilix`
 - `alacritty`: default terminal in sway
-
 - `gnome-tweaks`
 - `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
@@ -95,6 +94,7 @@
 - `testdisk`: data recovery utility
 - `unrar`: winrar
 - `pdfarrange`: pdf manipulation
+- `paru`: wrapper on pacman
 
 ## I/O
 
