@@ -151,6 +151,7 @@
 - `ngrok` (AUR): expose your localhost
 - `mycli` (AUR): MySQL CLI with autocomplete
 - `robo3t-bin` (AUR): MongoDB UI
+- `maven`: java package manager
 
 ## Apps
 
