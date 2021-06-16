@@ -50,7 +50,7 @@ rclone purge "remote":"remote/path" --dry-run
 rclone purge "remote":"remote/path" --interactive
 ```
 
-## Synca
+## Sync
 
 ```sh
 # dry-run
