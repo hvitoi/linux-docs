@@ -5,8 +5,8 @@
   - Allows diffing between two commits
 
 ```sh
-# Diff between the previous commit and the current commit
-git latexdiff "HEAD^" "HEAD" \
+# Diff between the last commit and the workspace
+git latexdiff "HEAD~1" "--" \
   --main "main.tex" \
   --lualatex \
   --bibtex \
