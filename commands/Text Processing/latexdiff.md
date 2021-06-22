@@ -6,7 +6,7 @@
 
 ```sh
 # Diff between the last commit and the workspace
-git latexdiff "HEAD~1" "--" \
+git latexdiff "HEAD" "--" \
   --main "main.tex" \
   --lualatex \
   --bibtex \
