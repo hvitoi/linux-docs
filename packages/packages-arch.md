@@ -76,6 +76,7 @@
 - `pulseaudio-modules-bt-git` (AUR)
 - `woeusb` (AUR)
 - `f5vpn` (AUR)
+- `networkmanager-f5vpn` (AUR): NetworkManager plugin for f5 vpn
 - `net-tools`
 - `wireshark-qt`
 - `rclone`
