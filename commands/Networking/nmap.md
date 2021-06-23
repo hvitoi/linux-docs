@@ -3,7 +3,7 @@
 - Network mapping tool
 - It works by sending various network messages to the IP addresses in the subnet
 
-```sh
+```shell
 # List of active IP addresses
 sudo nmap -sn "192.168.1.0/24"
 

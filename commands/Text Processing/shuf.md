@@ -3,7 +3,7 @@
 - Shuffle!
 - Display a list of random numbers in a range
 
-```sh
+```shell
 
 shuf -i `LO-HI`
 shuf -i 20-25 # Between 20 and 24

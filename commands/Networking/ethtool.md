@@ -3,7 +3,7 @@
 - Get information about a specific NIC
 - The NIC is showed in the `ip a` command
 
-```sh
+```shell
 # Show info about the NIC
 ethtool `nic`
 ethtool enp0s3
@@ -22,7 +22,7 @@ ethtool enp0s3
 - Provide high availability and redundancy (if one dies, the other can provide info)
 - Example: bond NIC `enp0s3` and `enp0s8`
 
-```sh
+```shell
 modprobe bonding # Add bonding module
 modinfo bonding # Info about bonding module
 ```
@@ -70,7 +70,7 @@ SLAVE=yes
 
 - Restart the network service
 
-```sh
+```shell
 systemctl restart network
 cat /proc/net/bonding/bond0 # Verify the bonding
 ```

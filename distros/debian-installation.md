@@ -49,7 +49,7 @@ apt install --reinstall xserver-xorg-core xserver-xorg-video-nouveau
 
 - Allows the use of NVIDIA Optimus both on `nvidia` or `nouveau` drivers
 
-```sh
+```shell
 # Nouveau
 sudo apt install bumblebee primus
 

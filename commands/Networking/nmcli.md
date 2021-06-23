@@ -3,7 +3,7 @@
 - Installed with the package `networkmanager`
 - First the service must be enabled `systemctl enable NetworkManager.service`
 
-```sh
+```shell
 # Show wifi list
 nmcli device wifi list
 

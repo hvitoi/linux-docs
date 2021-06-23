@@ -2,7 +2,7 @@
 
 ## Debian repo
 
-```sh
+```shell
 sudo apt install \
   vim \
   kafkacat \

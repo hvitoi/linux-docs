@@ -18,7 +18,7 @@
 - `CTRL+x+e`
 - `wq!` to execute
 
-```sh
+```shell
 for host in $HOSTS
 do
   echo "${host}"

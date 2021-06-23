@@ -6,7 +6,7 @@
 
 - Create a new partition
 
-```sh
+```shell
 fdisk /dev/sdx # n(ew)
 mkfs.xfs /dev/sdx # Make the XFS filesystem
 mount /dev/sdx1 /data # Mount
@@ -19,7 +19,7 @@ umount /data # Unmount
 - LVM allow multiple physical disks to be combined together
 - The advantage is to easily add/remove new disks to a `volume group`
 
-```sh
+```shell
 # Create a new partition
 fdisk "/dev/sdx" # Create (n) a new primary (n) partition. Choose (t) LVM Linux type
 
@@ -45,7 +45,7 @@ df -h
 
 - Extend a logical volume by adding a new physical volume to it
 
-```sh
+```shell
 # Attach new hard disk
 ---
 

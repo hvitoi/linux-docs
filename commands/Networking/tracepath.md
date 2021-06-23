@@ -2,7 +2,7 @@
 
 - Contained in `iputils` package
 
-```sh
+```shell
 # Trace the route of a package
 tracepath `url/ip`
 tracepath www.google.com

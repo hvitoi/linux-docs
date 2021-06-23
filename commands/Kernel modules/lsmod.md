@@ -2,7 +2,7 @@
 
 - Modules are stored in `/usr/lib/modules/kernel_release`
 
-```sh
+```shell
 # List all modules
 lsmod
 ```

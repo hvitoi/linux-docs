@@ -5,12 +5,12 @@
 - Configuration file: `/etc/ntp.conf`
 - Runs on port 123
 
-```sh
+```shell
 # Check service daemon
 systemctl statys ntpd
 ```
 
-```sh
+```shell
 # NTPq interative mode
 ntpq
 - peers # Show servers connected to get the time

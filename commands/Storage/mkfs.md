@@ -2,7 +2,7 @@
 
 - Make file system for a partition
 
-```sh
+```shell
 # FAT 32 partition
 mkfs.fat -F32 "/dev/sdx1"
 
@@ -20,6 +20,6 @@ mount "/dev/sdx1" "/data"
 
 - Reserved space can be removed from ext4 filesystems if you don't plan to install the system there
 
-```sh
+```shell
 tune2fs -m 0 "/dev/sdx1"
 ```

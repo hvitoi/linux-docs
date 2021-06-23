@@ -1,5 +1,5 @@
 # base64
 
-```sh
+```shell
 base64 --decode `file.txt` > `output.pem`
 ```

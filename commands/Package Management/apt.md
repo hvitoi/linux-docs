@@ -5,7 +5,7 @@
 
 ## Basic operations
 
-```sh
+```shell
 # Install package
 sudo apt install `package`
 
@@ -26,7 +26,7 @@ sudo apt autoremove
 
 ## Package Info
 
-```sh
+```shell
 # List all available packages
 sudo apt list
 
@@ -47,7 +47,7 @@ zcat /var/log/apt/history.log.*.gz | cat - /var/log/apt/history.log | grep -Po '
 
 ## Advanced operations
 
-```sh
+```shell
 # Edit source list
 sudo apt edit-sources
 

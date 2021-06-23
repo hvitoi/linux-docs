@@ -2,7 +2,7 @@
 
 - Network manager using `ip` command
 
-```sh
+```shell
 # Show interfaces
 iw dev
 

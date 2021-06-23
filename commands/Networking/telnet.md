@@ -5,7 +5,7 @@
 - `telnet` package must be installed. It does not come on linux out of the box
   - `sudo apt install telnet`
 
-```sh
+```shell
 # Telnet an IP and port
 telnet `ip` `port`
 telnet mywebsite.com 443

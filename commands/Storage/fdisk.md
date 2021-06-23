@@ -4,7 +4,7 @@
 - Show disk and devices (partitions)
 - Requires sudo
 
-```sh
+```shell
 # Show disks and devices
 fdisk -l
 

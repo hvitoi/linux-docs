@@ -2,10 +2,10 @@
 
 - Eval sets up environment variables from a text
 
-```sh
+```shell
 eval myenvs.txt
 ```
 
-```sh
+```shell
 eval $(minikube docker-env)
 ```

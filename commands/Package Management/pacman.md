@@ -9,7 +9,7 @@
 
 ## Query
 
-```sh
+```shell
 # Query all packages
 pacman --query
 pacman -Q
@@ -29,7 +29,7 @@ pacman -Qu
 
 ## Sync
 
-```sh
+```shell
 # Install package
 pacman --sync "package"
 pacman -S "package"
@@ -48,7 +48,7 @@ pacman -Ss "regex-package"
 
 ## Remove
 
-```sh
+```shell
 # Remove package
 pacman -R "package"
 
@@ -64,7 +64,7 @@ pacman -Rc "package"
 
 ## Modify
 
-```sh
+```shell
 # Downgrade a kernel
 pacman -U linux-4.15.8-1-x86_64.pkg.tar.xz
 ```
@@ -80,7 +80,7 @@ IgnorePkg=linux
 
 ## Last Modified packages
 
-```sh
+```shell
 grep -iE 'installed|upgraded|removed' /var/log/pacman.log
 ```
 
@@ -89,7 +89,7 @@ grep -iE 'installed|upgraded|removed' /var/log/pacman.log
 - Cache packages are stored at `/var/cache/pacman/pkg`
 - Requires the `pacman-contrib` package in order to clean pacman cache
 
-```sh
+```shell
 paccache -r
 pacman -Sc # more aggressive (doesn't keep old versions)
 ```

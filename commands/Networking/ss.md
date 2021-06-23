@@ -2,7 +2,7 @@
 
 - Monitor Network Connections
 
-```sh
+```shell
 # List all connection (regardless of the state)
 ss
 

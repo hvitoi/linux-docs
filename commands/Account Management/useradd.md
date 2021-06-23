@@ -61,7 +61,7 @@ useradd \
   - Checks the field `passwd: files sss`
   - `sss` is the ldap server, it's the second option after a user is not found locally
 
-```sh
+```shell
 # Install
 sudo apt install *openldap*
 

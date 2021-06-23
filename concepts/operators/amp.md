@@ -1,6 +1,6 @@
 # Amp sign
 
-```sh
+```shell
 for i in `seq 1 10`; do curl http://site.com &; done
 ```
 

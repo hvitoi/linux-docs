@@ -46,7 +46,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-
 
 ## HTTP methods
 
-```sh
+```shell
 curl \
   -H "Content-Type: application/json" \
   -X GET "localhost:9200/shakespeare/_search?pretty" \
@@ -59,7 +59,7 @@ curl \
       }'
 ```
 
-```sh
+```shell
 curl -s "localhost:9200/movies/_search" \
   --request GET \
   --header "Content-Type: application/json" \

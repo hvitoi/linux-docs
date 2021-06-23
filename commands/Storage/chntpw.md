@@ -3,7 +3,7 @@
 - Mount Windows
 - At `/media/hvitoi/Windows/Windows/System32/config`
 
-```sh
+```shell
 # Regedit
 chntpw -e SYSTEM
 

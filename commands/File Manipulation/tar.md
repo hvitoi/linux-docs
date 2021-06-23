@@ -40,7 +40,7 @@ tar -xJxvf `file` # xz
 
 ## Other
 
-```sh
+```shell
 # Strip
 tar -xzvf `file.tgz` --strip-components=1
 ```

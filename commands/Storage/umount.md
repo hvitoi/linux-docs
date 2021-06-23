@@ -2,7 +2,7 @@
 
 - Unmount filesystems
 
-```sh
+```shell
 umount `folder`
 umount /data
 ```

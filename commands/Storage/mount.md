@@ -2,7 +2,7 @@
 
 - Mount the volume to a folder
 
-```sh
+```shell
 mount `partition` `folder`
 mount /dev/sdx1 /data
 

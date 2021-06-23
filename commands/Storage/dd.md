@@ -12,7 +12,7 @@
 - `dd` primary purpose is to convert and copy files!
 - `dd` doesn't care about the size used! It copies everything (used and free memory)
 
-```sh
+```shell
 dd if=`src-file` of=`dest-file`
 dd if=/dev/sdx of=/dev/sdy # Copy disk to disk
 dd if=/dev/sdx of=/data # Copy disk to directory
@@ -25,7 +25,7 @@ dd if=/data/sdx1.img of=/dev/sdx1 # Restory backup from file
 
 ## Copy ISO to flash drive
 
-```sh
+```shell
 ## List block devices
 lsblk
 

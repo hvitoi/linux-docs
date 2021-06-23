@@ -12,7 +12,7 @@ Shell + Application = `Software`
 
 ## Find your shell
 
-```sh
+```shell
 echo $0 # Current shell
 cat /etc/shells # Available shells
 echo $? # Print the exit code
@@ -32,7 +32,7 @@ echo $? # Print the exit code
 - Change default shell
 - The shell binary must be authorized in `/etc/shells`
 
-```sh
+```shell
 # Change the default shell for the current user
 chsh -s `shell`
 
@@ -100,7 +100,7 @@ fi
 
 ## For loops
 
-```sh
+```shell
 for i in `seq 1 10`; do echo $i; done
 ```
 
@@ -160,7 +160,7 @@ case $choice in
 esac
 ```
 
-```sh
+```shell
 # Ternary
 case "$b" in
  5) a=$c ;;

@@ -2,7 +2,7 @@
 
 - Sorts in alphabetical order
 
-```sh
+```shell
 # alphabetically
 sort "file"
 

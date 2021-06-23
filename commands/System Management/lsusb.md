@@ -2,6 +2,6 @@
 
 - List usb devices
 
-```sh
+```shell
 lsusb
 ```

@@ -1,6 +1,6 @@
 # pdftk
 
-```sh
+```shell
 # Pick pages
 pdftk "in.pdf" \
   cat 1-20 \

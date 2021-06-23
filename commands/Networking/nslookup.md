@@ -2,7 +2,7 @@
 
 - Requires package `dnsutils`
 
-```sh
+```shell
 # Find the IP from a hostname
 nslookup `hostname`
 nslookup www.google.com
@@ -37,14 +37,14 @@ nslookup 172.217.28.4
 
 - `bind9` is the name of the DNS package
 
-```sh
+```shell
 sudo apt install bind9
 apt-get install bind9-doc
 ```
 
 - `named` is the name of the dns service
 
-```sh
+```shell
 systemctl status named
 ```
 

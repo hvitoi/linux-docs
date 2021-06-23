@@ -2,7 +2,7 @@
 
 - PulseAudio command
 
-```sh
+```shell
 
 # Load module
 pacmd load-module module-alsa-source device=hw:Loopback,1,0

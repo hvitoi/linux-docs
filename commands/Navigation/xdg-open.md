@@ -2,7 +2,7 @@
 
 - Opens a file or folder in the default application for that file extension
 
-```sh
+```shell
 # Opens current folder in the default file manager
 xdg-open .
 

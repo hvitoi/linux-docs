@@ -23,7 +23,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 
 - And then automatically re-generate the `grub.cfg` file with:
 
-```sh
+```shell
 grub-mkconfig -o "/boot/grub/grub.cfg"
 ```
 
@@ -36,7 +36,7 @@ grub-mkconfig -o "/boot/grub/grub.cfg"
 MODULES=(i915)
 ```
 
-```sh
+```shell
 # All presets
 mkinitcpio -P
 

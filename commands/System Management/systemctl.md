@@ -40,7 +40,7 @@ systemctl --type=service
 
 - `/etc/systemd/system/`
 
-```sh
+```shell
 #Add new service
 sudo vim /etc/systemd/system/tomcat.service
 ```

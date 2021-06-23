@@ -2,6 +2,6 @@
 
 - Display number of processor cores
 
-```sh
+```shell
 nproc
 ```

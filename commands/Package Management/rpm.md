@@ -4,7 +4,7 @@
 
 ## Package information
 
-```sh
+```shell
 # List all packages
 rpm -qa
 
@@ -27,7 +27,7 @@ rpm -qf /etc/bin/ksh
 
 ## Install/Uninstall packages
 
-```sh
+```shell
 # Install rpm package from file
 rpm -ihv `/package/location.rmp`
 

@@ -10,7 +10,7 @@
 
 ### Install server
 
-```sh
+```shell
 # Install ssh-server
 sudo apt install openssh-server
 
@@ -29,7 +29,7 @@ ssh localhost
 
 - Keys in the server are stored at `~/.ssh/authorized_keys`
 
-```sh
+```shell
 # Run these commands in the client side!
 ssh-copy-id -i `/path/to/key.pub` `user`@`hostname`
 ssh-copy-id -i ~/.ssh/id_ed25519.pub root@ip
@@ -43,7 +43,7 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub root@ip
 
 ### Generate keys
 
-```sh
+```shell
 # List existing keys
 ls ~/.ssh
 
@@ -61,7 +61,7 @@ ssh-keygen -f `key-name` -m `PEM`  # Specify the name for the key (and create in
 
 ### Add keys to client
 
-```sh
+```shell
 # Start the SSH authentication agent (and print the process id)
 eval "$(ssh-agent -s)"
 
@@ -74,7 +74,7 @@ ssh-add -L # Print ssh public keys
 
 ### Connect to server via SSH
 
-```sh
+```shell
 # Test connection
 ssh -T `git@github.com` # Accept 'yes'
 

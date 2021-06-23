@@ -18,7 +18,7 @@
 
 ## Journal
 
-```sh
+```shell
 # Boot messages
 journalctl -b # current boot
 journalctl -b -1 # last boot

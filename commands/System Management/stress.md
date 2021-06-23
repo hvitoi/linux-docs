@@ -2,7 +2,7 @@
 
 - Stress test
 
-```sh
+```shell
 # Stress 1 cpu core for 120 s
 stress --cpu 1 --timeout 120
 

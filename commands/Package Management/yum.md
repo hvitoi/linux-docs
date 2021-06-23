@@ -6,7 +6,7 @@
 - `rpm`: Red hat package Manager is the extension file for the binaries
   - rpm is used when you have already a package downloaded
 
-```sh
+```shell
 # Install package
 yum install `package`
 yum install ksh* # Install everything with ksh keyword
@@ -53,7 +53,7 @@ gpgcheck=0
 
 - Create repo
 
-```sh
+```shell
 # Create the repo containing the rpm packages locally
 createrepo /localrepo
 

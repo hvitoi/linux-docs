@@ -9,7 +9,7 @@
 - `/usr/share/applications`: global
 - `~/.local/share/applications/`: user
 
-```sh
+```shell
 # Install to /usr/share/applications
 sudo desktop-file-install `app.desktop`
 sudo desktop-file-install jetbrains-idea.desktop

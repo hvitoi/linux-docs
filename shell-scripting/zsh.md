@@ -2,7 +2,7 @@
 
 ## Installation
 
-```sh
+```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -13,7 +13,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 - Enabling plugins
 
-```sh
+```shell
 vi ~/.zshrc
 ```
 
@@ -49,6 +49,6 @@ ZSH_THEME_RANDOM_IGNORED=(pygmalion tjkirch_mod)
 
 - `~/.oh-my-zsh`
 
-```sh
+```shell
 echo $ZSH
 ```

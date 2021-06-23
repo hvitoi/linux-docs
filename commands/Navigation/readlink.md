@@ -2,6 +2,6 @@
 
 - Find where a link is pointing to
 
-```sh
+```shell
 readlink -f $(which javac)
 ```

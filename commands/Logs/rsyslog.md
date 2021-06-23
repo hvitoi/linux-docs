@@ -5,7 +5,7 @@
 - Configuration file: `/etc/rsyslog.conf`
 - Port 514
 
-```sh
+```shell
 # Install package/service
 sudo apt install rsyslog
 

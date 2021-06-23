@@ -6,12 +6,12 @@
 - `&> file` redirects stdout and stderr to file
 - `> file 2>&1` redirects stdout and stderr to file (deprecated)
 
-```sh
+```shell
 # Show exit code from previous command
 echo $?
 ```
 
-```sh
+```shell
 # Send exit code to 2>/dev/null
 # If there is error (||) return exit code success. (|) would always return success
 cp ./a ./b 2>/dev/null || :

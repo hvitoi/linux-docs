@@ -3,7 +3,7 @@
 - Global regular expression print
 - Print lines that match a specified pattern
 
-```shell
+```shellell
 # Create sample file
 echo "Henrique Abrantes Vitoi
 Lais Abrantes Vitoi
@@ -11,7 +11,7 @@ Simone Gomes Abrantes Vitoi
 Luiz Henrique Rossi Vitoi" > family
 ```
 
-```shell
+```shellell
 # General usage
 grep "keyword" "file"
 

@@ -42,7 +42,7 @@ awk '{if($NF == "Vitoi") print $0;}' family
 ls -l | awk '{print NF}'
 ```
 
-```sh
+```shell
 NAMESPACES=(desenvolvimento esteira-01 esteira-02 preproducao prodlike)
 SERVICES=(disponibilidade landing-page product-catalog-fixa cart-fixa leads content)
 for s in "${SERVICES[@]}"

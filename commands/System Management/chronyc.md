@@ -6,7 +6,7 @@
 - Configuration file `/etc/chronyd.conf`
 - Log file `/var/log/chrony`
 
-```sh
+```shell
 # Install service
 sudo apt install chrony
 

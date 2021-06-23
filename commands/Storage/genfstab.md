@@ -4,7 +4,7 @@
 - `fstab` file can be used to define how disk partitions, various other block devices, or remote filesystems should be mounted into the filesystem
 - These definitions will be converted into `systemd mount` units dynamically at boot
 
-```sh
+```shell
 # By UUID
 genfstab -U /mnt >> /mnt/etc/fstab
 

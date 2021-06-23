@@ -4,7 +4,7 @@
 - `git-latexdiff` is a wrapper around latexdiff and diff
   - Allows diffing between two commits
 
-```sh
+```shell
 # Diff between the last commit and the workspace
 git latexdiff "HEAD" "--" \
   --main "main.tex" \

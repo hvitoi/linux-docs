@@ -4,7 +4,7 @@
 - The initial ramdisk is in essence a very small environment (early userspace) which loads various kernel modules and sets up necessary things before handing over control to init
 - Config file `/etc/mkinitcpio.conf`
 
-```sh
+```shell
 # All presets
 mkinitcpio -P
 

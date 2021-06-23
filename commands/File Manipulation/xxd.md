@@ -2,7 +2,7 @@
 
 - Hexadecimal representation of a file
 
-```sh
+```shell
 # Hexadecimal
 xxd `file`
 

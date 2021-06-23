@@ -4,7 +4,7 @@
 - Loading kernel modules manually (through `modprobe`) means you will have to modprobe every time you reboot
 - Modules are stored at `/lib/modules/kernel-release` and `/usr/lib/modules/kernel-release`
 
-```sh
+```shell
 # Activate module
 modprobe `module-name`
 modprobe bonding # And module for network bonding

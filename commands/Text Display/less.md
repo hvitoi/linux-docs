@@ -3,7 +3,7 @@
 - View the content one line at a time
 - `Shift+F` goes to the bottom of the file
 
-```sh
+```shell
 # Read text file line by line (q quits)
 less `filename`
 

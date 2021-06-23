@@ -2,7 +2,7 @@
 
 - Wrapper around pacman
 
-```sh
+```shell
 # Install package
 yay "package"\
 

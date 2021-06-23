@@ -2,7 +2,7 @@
 
 - Information about a module in the linux kernel
 
-```sh
+```shell
 modinfo `module-name`
 modinfo bonding # Info about the bonding module
 ```

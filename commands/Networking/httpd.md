@@ -5,12 +5,12 @@
 - Web pages: `/var/www/html/index.html`
 - Log files: `/vat/log/httpd`
 
-```sh
+```shell
 # Install service
 sudo apt install apache2
 ```
 
-```sh
+```shell
 # Service
 systemctl status httpd
 ```

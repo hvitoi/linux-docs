@@ -1,6 +1,6 @@
 # timedatectl
 
-```sh
+```shell
 # Enable ntp server for clock update
 timedatectl set-ntp true
 

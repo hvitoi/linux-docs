@@ -2,7 +2,7 @@
 
 - Pulse Audio CTL
 
-```sh
+```shell
 # List connections
 pactl list
 pactl list | grep -C2 A2DP

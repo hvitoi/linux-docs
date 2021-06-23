@@ -3,7 +3,7 @@
 - Similar to dnslookup but more verbose
 - Dig is newer and shows more info than nslookup
 
-```sh
+```shell
 dig `hostname`
 dig www.google.com
 ```

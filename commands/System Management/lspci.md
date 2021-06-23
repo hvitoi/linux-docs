@@ -2,7 +2,7 @@
 
 - Show PCI devices
 
-```sh
+```shell
 lspci
 lspci -nnk
 lspci -k # Show PCI device alongside with its firmware

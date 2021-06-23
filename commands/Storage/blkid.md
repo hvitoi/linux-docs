@@ -2,6 +2,6 @@
 
 - Print UUID of a device
 
-```sh
+```shell
 blkid
 ```

@@ -6,7 +6,7 @@
 - fsck must be run in `unmounted` file systems! To avoid data corruption
 - fsck is run on the `filesystem`, not on the mounted on
 
-```sh
+```shell
 fsck /dev/sdx1
 fsck /dev/sdx1 -f # force system check even if it is clean
 fsck /dev/sdx1 -y # fix problems automatically
@@ -29,7 +29,7 @@ fsck /dev/sdx1 -y # fix problems automatically
 - Unlike fsck, it does not run at boot time
 - For large partitions. Terabytes
 
-```sh
+```shell
 # Unmount the filesystem first
 umount /data # /data is the folder in which the FS is mounted
 

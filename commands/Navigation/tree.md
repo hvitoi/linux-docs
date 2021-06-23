@@ -2,7 +2,7 @@
 
 - Directory listing program displaying a depth indented list of files
 
-```sh
+```shell
 # Current folder
 tree
 

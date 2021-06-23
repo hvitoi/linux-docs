@@ -6,7 +6,7 @@
 
 ## Prepare the disk
 
-```sh
+```shell
 # Create a temporary encrypted container to be cleaned
 cryptsetup open \
   --type "plain" \
@@ -25,7 +25,7 @@ cryptsetup close "to_be_wiped"
 
 ## Format and encrypt a partition
 
-```sh
+```shell
 # A partition or the whole disk can be encrypted
 cryptsetup luksFormat "/dev/sdx" # or /dev/sdx1 for a single partition
 cryptsetup luksFormat "/dev/sdx" --verbose --verify-passphase # -v -y
@@ -36,7 +36,7 @@ cryptsetup luksFormat "/dev/sdx" --verbose --verify-passphase # -v -y
 - Unlocked drives are mapped to `/dev/mapper/drive-name`
 - Once opened, you it's completely treated as any other hard drive
 
-```sh
+```shell
 # Unlock
 cryptsetup open "/dev/sdx" "drive-name" # Drive is mapped to /dev/mapper/drive-name
 
@@ -49,12 +49,12 @@ cryptsetup close "drive-name"
 - Filesystem can be created inside the unlocked container
 - mkfs doesn't know it is an encrypted drive. It treats like any other storage device
 
-```sh
+```shell
 mkfs.exfat "/dev/mapper/drive-name"
 mkfs.ext4 "/dev/mapper/drive-name"
 ```
 
-```sh
+```shell
 # Other commands on the unlocked drive
 fsck "/dev/mapper/drive-name"
 mount "/dev/mapper/drive-name" "/mnt/data"
@@ -62,7 +62,7 @@ mount "/dev/mapper/drive-name" "/mnt/data"
 
 ## LUKS header
 
-```sh
+```shell
 # Show LUKS header information (including key slots/passwords)
 cryptsetup luksDump "/dev/sdx1"
 
@@ -73,7 +73,7 @@ cryptsetup luksHeaderRestore "/dev/sdx1" --header-backup-file "LuckyHeader.bin" 
 
 ## LUKS passwords
 
-```sh
+```shell
 # Change password (this will look if the old password exists, if yes then replace it)
 cryptsetup luksChangeKey "/dev/sdx1"
 
@@ -88,7 +88,7 @@ cryptSetup luksAddKey "/dev/sdx1"
 - crypttab processing at boot time is made by the `systemd-cryptsetup-generator`
 - `noauto` param mounts on demand
 
-```sh
+```shell
 # get UUID of the encrypted device
 cryptsetup luksUUID "/dev/sdx"
 ```
@@ -118,7 +118,7 @@ moon UUID=692e7b5c-5c92-4fd3-8822-97b0355c0941 none luks
 
   - Create the script `/etc/pam_cryptsetup.sh` and make it executable `chmod +x script.sh`
 
-  ```sh
+  ```shell
   #!/usr/bin/env bash
 
   CRYPT_USER="hvitoi"

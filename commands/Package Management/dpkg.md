@@ -1,5 +1,5 @@
 # dpkg
 
-```sh
+```shell
 dpkg -i `./package.deb`
 ```

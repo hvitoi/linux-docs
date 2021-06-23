@@ -7,7 +7,7 @@
 - Identify slow points that may adversely affect the network traffic
 - The first route is usually the `modem` (`192.168.1.1`)
 
-```sh
+```shell
 traceroute `url`
 traceroute www.google.com
 ```
