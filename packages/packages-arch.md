@@ -96,6 +96,7 @@
 - `unrar`: winrar
 - `pdfarrange`: pdf manipulation
 - `paru`: wrapper on pacman
+- `bitwarden` (AUR): password manager
 
 ## I/O
 
