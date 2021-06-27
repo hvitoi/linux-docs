@@ -32,14 +32,14 @@
 ## Audio
 
 - `pipewire`
-- `pipewire-docs`
+- `pipewire-docs`: only for documentation, not necessary
 - `pipewire-alsa`
 - `pipewire-pulse`
 - `pipewire-jack`
-- `gst-plugin-pipewire`
 - `xdg-desktop-portal`: screen sharing on browsers
 - `xdg-desktop-portal-gtk`: screen sharing on browsers with gnome
 - `xdg-desktop-portal-wlr`: screen sharing on browsers with wayland root
+- `gst-plugin-pipewire`: need if using xdg-desktop-portal-wlr
 - `pulseaudio`
 - `pulseaudio-alsa`
 - `pulseaudio-jack`
@@ -154,6 +154,7 @@
 - `mycli` (AUR): MySQL CLI with autocomplete
 - `robo3t-bin` (AUR): MongoDB UI
 - `maven`: java package manager
+- `tomcat10`
 
 ## Apps
 
