@@ -177,6 +177,7 @@
 - `cmatrix`
 - `texstudio`
 - `texlive-most`
+- `texlive-latexindent-meta`: latex formatting dependencies
 - `discord`
 - `typora` (AUR)
 
