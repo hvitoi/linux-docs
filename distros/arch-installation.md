@@ -2,7 +2,7 @@
 
 - Installation image: <https://archlinux.org/download/>
 
-```shellell
+```shell
 # Connect to Wi-Fi
 iwctl
 [iwd] device list

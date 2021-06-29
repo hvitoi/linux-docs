@@ -14,12 +14,12 @@
 
 - 0, 1 and 6 are the main run levels
 
-```shellell
+```shell
 # Tells the current run level of the session
 who -r # Usually 5 (networking with gui)
 ```
 
-```shellell
+```shell
 # Set default run level (5 by default)
 systemctl set-default `new-target`
 ```
@@ -81,7 +81,7 @@ You are logged in as `whoami`
 PrintMotd no
 ```
 
-```shellell
+```shell
 # Restart sshd service
 systemctl restart sshd
 ```
@@ -90,7 +90,7 @@ systemctl restart sshd
 
 ### Installation
 
-```shellell
+```shell
 # Arch
 pacman -S "grub" "efibootmgr" "os-prober"
 mount "/dev/sdx1" "/boot"
@@ -98,7 +98,7 @@ grub-install --target="x86_64-efi" --efi-directory="/boot" --bootloader-id="GRUB
 grub-mkconfig -o "/boot/grub/grub.cfg"
 ```
 
-```shellell
+```shell
 # Non-arch
 sudo mount "/dev/sdx3" "/mnt"
 for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
