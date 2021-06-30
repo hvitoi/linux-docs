@@ -13,6 +13,7 @@ keytool \
 ```
 
 ```Dockerfile
+FROM openjdk:11-jdk-slim
 USER root
 WORKDIR $JAVA_HOME/jre/lib/security
 COPY cacorp.crt ./
