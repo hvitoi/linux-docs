@@ -51,7 +51,7 @@ ls ~/.ssh
 ssh-keygen # No options
 ssh-keygen -t `rsa` -b `4096` -C `hvitoi@gmail.com` # type RSA
 ssh-keygen -t `ed25519` -C `My ssh key for the Jenkins` # type ED25519
-ssh-keygen -f `key-name` -m `PEM`  # Specify the name for the key (and create in the current directory)
+ssh-keygen -f `key-name` -m `PEM` # Set name and create in the current directory. PEM creates unencrypted private key
 # -t (type): rsa protocol
 # -b (bits): bits fr the key
 # -C: label/comment
